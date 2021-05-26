@@ -1,0 +1,380 @@
+body {
+  font-family: "Lato", sans-serif !important;
+  background-color: #e7e7e7;
+}
+h1 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+h2 {
+  font-size: 2.75rem;
+  font-weight: 700;
+}
+h3 {
+  font-size: 2.5rem;
+}
+h4 {
+  font-size: 2.25rem;
+}
+h5 {
+  font-size: 2rem;
+}
+.main-bg-auib {
+  background-color: #ac103d !important;
+}
+
+.accent-bg-auib {
+  background-color: #8b8e8f !important;
+}
+.main-txt-auib-hov {
+  text-align: left;
+  color: #ac103d !important;
+  transition: 0.3s;
+}
+.main-txt-auib {
+  text-align: left;
+  color: #ac103d !important;
+  transition: 0.3s;
+}
+.main-txt-auib-hov:hover {
+  color: #fff !important;
+}
+.accent-txt-auib {
+  text-align: left;
+
+  color: #8b8e8f !important;
+}
+.secondary0-bg-auib {
+  text-align: left;
+  background-color: #231f20;
+}
+.secondary1-bg-auib {
+  background-color: #d6d1cb;
+}
+.secondary2-bg-auib {
+  background-color: #867970;
+}
+
+.bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+@media (min-width: 768px) {
+  .bd-placeholder-img-lg {
+    font-size: 3.5rem;
+  }
+}
+.lang {
+  display: flex;
+}
+.lang > span {
+  padding: 0 !important;
+  margin: auto 3px !important;
+}
+.lang > a {
+  padding: 0 !important;
+  margin: auto 3px !important;
+}
+
+#navbar1 {
+  transition: top 0.5s; /* Transition effect when sliding down (and up) */
+}
+.btn {
+  color: #333;
+  background: #e7e7e7 !important;
+  font-size: 1.1rem !important;
+  font-weight: 600 !important;
+  text-transform: capitalize !important;
+  border-radius: 0 !important;
+  border: none !important;
+  position: relative;
+  z-index: 1;
+  transition: all 0.3s ease 0s;
+  width: fit-content;
+}
+.btn:hover {
+  color: #fff;
+  box-shadow: 0 0 10px -2px rgba(0, 0, 0, 0.4);
+}
+.btn:before,
+.btn:after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-left: 2px solid #ac103c;
+  border-top: 2px solid #ac103c;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 0.3s;
+}
+.btn:after {
+  border-right: 2px solid #ac103c;
+  border-bottom: 2px solid #ac103c;
+  border-left: none;
+  border-top: none;
+  left: auto;
+  right: 0;
+  top: auto;
+  bottom: 0;
+}
+.btn:hover:before,
+.btn:hover:after {
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+}
+.btn span {
+  display: block;
+  transition: all 0.15s;
+}
+.btn span:before {
+  content: "";
+  background: #ac103c;
+  width: 100%;
+  height: 100%;
+  transform: scale(0);
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  transition: all 0.3s ease 0s;
+}
+.btn:hover span:before {
+  transform: scale(1);
+}
+@media only screen and (max-width: 767px) {
+  .btn {
+    margin-bottom: 20px;
+  }
+}
+.nav-link {
+  letter-spacing: 1px;
+  overflow: hidden;
+  position: relative;
+  transition: all 0.4s ease 0s;
+}
+.nav-link:hover {
+  color: #ac103c;
+}
+.nav-link:before,
+.nav-link:after {
+  content: "";
+  border: 1px solid #ac103c;
+  border-top: none;
+  border-bottom: none;
+  transform: scale(0, 1);
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  transition: all 0.4s ease 0s;
+}
+.nav-link:after {
+  border: 1px solid #ac103c;
+  border-left: none;
+  border-right: none;
+  transform: scale(1, 0);
+  transition: all 0.5s ease 0s;
+}
+.nav-link:hover:before,
+.nav-link:hover:after {
+  transform: scale(1.1, 1.5);
+}
+/* @media only screen and (max-width: 767px){
+    .link{ margin-bottom: 30px; }
+} */
+
+.footer-section {
+  height: 100vh;
+  /* display: flex; */
+  /* flex-direction: column; */
+  justify-content: end;
+  /* padding: 5%; */
+  /* padding-top: 10vh; */
+}
+
+.d-footer,
+.m-footer,
+.u-footer {
+  width: 100%;
+  bottom: 0;
+  padding: 0.5rem;
+  text-align: center;
+  font-size: 1rem;
+}
+.m-footer {
+  font-weight: 600;
+}
+.m-footer a {
+  color: #fff;
+}
+.m-footer a:hover {
+  color: #ac103c !important;
+}
+.m-footer p {
+  font-size: 1.5rem;
+}
+.m-footer .touch {
+  align-self: center;
+}
+.m-footer .touch ul li {
+  color: #fff;
+  display: flex;
+  align-items: center;
+}
+.d-footer p {
+  color: #fff;
+}
+.m-footer .nav-link {
+  color: #fff !important;
+  margin: auto 1rem;
+  text-align: left !important;
+}
+
+.footer-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.m-footer .nav-link i {
+  font-size: 2rem;
+}
+.footer-bg {
+  background-color: #e7e7e759 !important;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+}
+.modal-body h5 {
+  font-size: 1.5rem;
+}
+
+.text-effect {
+  animation: 5s fadeInLeft;
+}
+
+@-webkit-keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+
+  }
+  50% {
+
+    opacity: 0.5;
+  }
+  100% {
+
+    opacity: 1;
+  }
+}
+.fadeInLeft {
+  -webkit-animation-name: fadeInLeft;
+  animation-name: fadeInLeft;
+}
+
+/* .zoominheader {
+  background-attachment: fixed;
+  background-repeat: repeat;
+  position: relative;
+  -webkit-animation: zoomin 10s ease-in infinite;
+  animation: zoomin 10s ease-in infinite;
+  transition: all .5s ease-in-out;
+  overflow: hidden;
+} */
+
+/* The innermost element*/
+/* .zoomoutheader {
+  width:400px;
+  height:200px;
+  text-align:center;
+  background: none;
+  -webkit-animation: zoomout 10s ease-in infinite;
+  animation: zoomout 10s ease-in infinite;
+  transition: all .5s ease-in-out;
+  overflow: hidden;
+} */
+
+/* Zoom in Keyframes */
+@-webkit-keyframes zoomin {
+  0% {
+    background-size: 105%;
+  }
+  25% {
+    background-size: 115%;
+  }
+  50% {
+    background-size: 125%;
+  }
+  75% {
+    background-size: 115%;
+  }
+  100% {
+    background-size: 105%;
+  }
+}
+@keyframes zoomin {
+  0% {
+    background-size: 105%;
+  }
+  25% {
+    background-size: 115%;
+  }
+  50% {
+    background-size: 125%;
+  }
+  75% {
+    background-size: 115%;
+  }
+  100% {
+    background-size: 105%;
+  }
+} /*End of Zoom in Keyframes */
+
+/* Zoom out Keyframes */
+
+/* Zoom out Keyframes */
+@-webkit-keyframes zoomout {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.67);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes zoomout {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.67);
+  }
+  100% {
+    transform: scale(1);
+  }
+} /*End of Zoom out Keyframes */
+
+/*Style for the text*/
+.text {
+  color: red;
+  font-weight: bold;
+}

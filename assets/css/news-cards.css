@@ -1,0 +1,45 @@
+.slider {
+  display: flex;
+}
+.slider .card {
+  flex: 1;
+  margin: 0 10px;
+  background: #fff;
+  box-shadow: 0 0 10px grey;
+  padding: 5px;
+  max-height: 30rem;
+}
+.slider .card .img {
+  height: 300px;
+  width: 100%;
+}
+.slider .card .img img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.slider .card .content {
+  padding: 10px 20px;
+  margin-bottom: 5px;
+}
+.card .content .title {
+  font-size: 25px !important;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+.card .content .sub-title {
+  font-size: 20px !important;
+  font-weight: 600;
+  color: #ac103d;
+  line-height: 20px;
+  margin-bottom: 5px;
+}
+.card .content p {
+  text-align: justify;
+  margin: 15px 0;
+}
+.card .content .btn{
+  display: block;
+  text-align: left;
+  margin-top: 10px;
+}

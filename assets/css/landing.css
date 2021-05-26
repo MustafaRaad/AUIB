@@ -1,0 +1,79 @@
+.vid-fg {
+  z-index: 2;
+  position: absolute;
+}
+.vid-fg h1 {
+  color: #fff;
+}
+.quick-nav {
+  margin: auto;
+  justify-content: center;
+  position: absolute;
+  bottom: 140px;
+  width: inherit;
+  background: rgba(255, 255, 255, 0.4);
+  z-index: 5;
+}
+.quick-nav a{
+  color: #303030;
+  font-weight: 700;
+}
+.quick-nav a:hover{
+  color: #ac103d;
+  font-weight: 700;
+}
+.section-slide {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 15vh 8vw 5vh 8vw;
+  /* padding-top: 10vh; */
+  justify-content: center;
+}
+
+.slide2 {
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  /* justify-content: center; */
+      width: 95%;
+}
+.section-slide h1 {
+  /* border-bottom: 1px solid #303030; */
+  margin-bottom: 10px;
+}
+
+.section-slide .row {
+  height: fit-content;
+  /* margin: auto; */
+}
+.row {
+  align-items: center;
+  /* justify-content: center; */
+  /* padding: 40px; */
+}
+
+.section-card {
+  text-align: justify;
+  padding: 4rem;
+  background-color: #e7e7e7ab;
+  box-shadow: 0 0 20px grey;
+}
+.section-card p {
+  font-size: 1.5rem!important;
+}
+
+/* #square {
+  width: 60px;
+  height: 60px;
+  margin: auto;
+} */
+
+.title-lg {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+
+
+
