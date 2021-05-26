@@ -48,6 +48,7 @@
     font-size: 2em;
     transform: rotate(0deg);
     margin: 30px;
+    line-height: 100%;
 }
 
 .container_accordion .card_accordion img {
@@ -55,7 +56,6 @@
     height: 100%;
     object-fit: cover;
     transition: all 1s ease-in-out;
-    filter: grayscale(100%);
 }
 
 .container_accordion .card_accordion:not(:nth-child(5)) {
