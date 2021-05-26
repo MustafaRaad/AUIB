@@ -1,5 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
 body {
-  font-family: "Lato", sans-serif !important;
+  font-family: "Ubuntu", sans-serif;
   background-color: #e7e7e7;
 }
 h1 {
@@ -273,14 +274,11 @@ h5 {
 @keyframes fadeInLeft {
   0% {
     opacity: 0;
-
   }
   50% {
-
     opacity: 0.5;
   }
   100% {
-
     opacity: 1;
   }
 }
