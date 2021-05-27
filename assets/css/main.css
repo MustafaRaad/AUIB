@@ -376,3 +376,24 @@ h5 {
   color: red;
   font-weight: bold;
 }
+
+.main_title_text{
+  font-size: 24px;
+}
+
+.menu_item_text{
+  font-size: 14px;
+}
+
+.paragraph_text{
+  font-size: 14px;
+}
+
+.card_header_text{
+  font-size: 18px;
+}
+
+.card_body_text{
+  font-size: 14px;
+}
+
