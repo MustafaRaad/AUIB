@@ -21,7 +21,7 @@ h5 {
   font-size: 2rem;
 }
 .main-bg-auib {
-  background-color: #ac103d !important;
+  background-color: #AE1836 !important;
 }
 
 .accent-bg-auib {
@@ -29,12 +29,12 @@ h5 {
 }
 .main-txt-auib-hov {
   text-align: left;
-  color: #ac103d !important;
+  color: #AE1836 !important;
   transition: 0.3s;
 }
 .main-txt-auib {
   text-align: left;
-  color: #ac103d !important;
+  color: #AE1836 !important;
   transition: 0.3s;
 }
 .main-txt-auib-hov:hover {
@@ -107,8 +107,8 @@ h5 {
   content: "";
   width: 0;
   height: 0;
-  border-left: 2px solid #ac103c;
-  border-top: 2px solid #ac103c;
+  border-left: 2px solid #AE1836;
+  border-top: 2px solid #AE1836;
   opacity: 0;
   position: absolute;
   top: 0;
@@ -116,8 +116,8 @@ h5 {
   transition: all 0.3s;
 }
 .btn:after {
-  border-right: 2px solid #ac103c;
-  border-bottom: 2px solid #ac103c;
+  border-right: 2px solid #AE1836;
+  border-bottom: 2px solid #AE1836;
   border-left: none;
   border-top: none;
   left: auto;
@@ -137,7 +137,7 @@ h5 {
 }
 .btn span:before {
   content: "";
-  background: #ac103c;
+  background: #AE1836;
   width: 100%;
   height: 100%;
   transform: scale(0);
@@ -172,12 +172,12 @@ h5 {
   transition: all 0.4s ease 0s;
 }
 .nav-link:hover {
-  color: #ac103c;
+  color: #AE1836;
 }
 .nav-link:before,
 .nav-link:after {
   content: "";
-  border: 1px solid #ac103c;
+  border: 1px solid #AE1836;
   border-top: none;
   border-bottom: none;
   transform: scale(0, 1);
@@ -189,7 +189,7 @@ h5 {
   transition: all 0.4s ease 0s;
 }
 .nav-link:after {
-  border: 1px solid #ac103c;
+  border: 1px solid #AE1836;
   border-left: none;
   border-right: none;
   transform: scale(1, 0);
@@ -228,7 +228,7 @@ h5 {
   color: #fff;
 }
 .m-footer a:hover {
-  color: #ac103c !important;
+  color: #AE1836 !important;
 }
 .m-footer p {
   font-size: 1.5rem;
