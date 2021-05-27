@@ -10,8 +10,8 @@
   visibility: visible;
   background-color: silver;
   justify-content: space-around;
-
 }
+
 .main-menu ul {
   float: left;
   /* width: fit-content; */
@@ -24,14 +24,14 @@
 }
 .main-menu .nav li a {
   color: #303030;
-  font-size: 3vh;
+  font-size: 2.3vh;
   font-weight: 400;
 }
 .main-menu .nav li a:hover {
   color: #ac103c;
 }
 .main-menu .nav li .main-link {
-  font-size: 3.5vh;
+  font-size: 2.5vh;
   font-weight: 600;
   border-bottom: 4px solid #ac103c;
   background-color: #e7e7e7;
@@ -45,6 +45,8 @@
   margin-bottom: 5px;
   width: auto;
 }
+
+
 .fas {
   margin-right: 15px;
   margin-left: 5px;
