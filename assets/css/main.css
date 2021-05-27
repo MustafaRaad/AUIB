@@ -69,6 +69,7 @@ h5 {
     font-size: 3.5rem;
   }
 }
+
 .lang {
   display: flex;
 }
@@ -388,22 +389,22 @@ h5 {
 }
 
 .main_title_text{
-  font-size: 24px;
+  font-size: 5vh !important;
 }
 
 .menu_item_text{
-  font-size: 14px;
+  font-size: 3vh !important;
 }
 
 .paragraph_text{
-  font-size: 14px;
+  font-size: 3vh !important;
 }
 
 .card_header_text{
-  font-size: 18px;
+  font-size: 4vh !important;
 }
 
 .card_body_text{
-  font-size: 14px;
+  font-size: 3vh !important;
 }
 
