@@ -1,5 +1,10 @@
 .container {
   height: 75vh;
+  display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
   /* padding: 9rem 0; */
 }
 .steper div {
@@ -21,7 +26,11 @@
   /* box-shadow: 0px 0px 10px #ccc; */
   margin: 80px 0;
   /* font-size: calc(100% + 10px); */
+      display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
+
 .content-section .col-6 {
   /* height: 75vh; */
   color: #fff;
@@ -47,46 +56,37 @@
   background-repeat: no-repeat;
 }
 
+.content-section .content-photo1 {
+  background-image: url("../../img/admissions/sec-2.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.content-section .content-photo2 {
+  background-image: url("../../img/admissions/sec-3.jpg");
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 .content-side {
   padding: 3rem 6rem 3rem 7rem;
 }
 
 .apply-cards > div > .col-3 {
   padding: 30px 30px 30px 60px;
-  color: #fff;
+  color: #000;
   text-align: justify;
 }
 .apply-cards > div > .col-3 p {
-  margin-top: 40px;
-  margin-bottom: 15px;
   font-size: calc(100% + 1px);
   font-weight: 300;
+  margin-top: 20px;
+  margin-bottom: 20px;
 
 }
-.apply-cards:nth-of-type(0) div .col-3{
-  background-image: url("../../img/admissions/card-bg00.png");
-  background-position: top;
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: 100%;
-}
-.apply-cards:nth-of-type(1) div .col-3{
-  background-image: url("../../img/admissions/card-bg0.png");
-  background-position: top;
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: 100%;
-}
-.apply-cards:nth-of-type(2) div .col-3{
-  background-image: url("../../img/admissions/card-bg1.png");
-  background-position: top;
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: 100%;
-}
-.apply-cards:nth-of-type(3) div .col-3{
+.apply-cards div .col-3{
   background-image: url("../../img/admissions/card-bg2.png");
-  background-position: top;
+  background-position: bottom;
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
@@ -95,6 +95,6 @@
 .title {
   font-size: calc(100% + 30px);
   text-align: center;
-  margin: 30px auto;
+  margin: 50px auto;
   
 }
