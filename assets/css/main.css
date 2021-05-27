@@ -41,9 +41,9 @@ h5 {
   color: #fff !important;
 }
 .accent-txt-auib {
-  text-align: left;
+  /* text-align: left; */
 
-  color: #8b8e8f !important;
+  color: #867970 ;
 }
 .secondary0-bg-auib {
   text-align: left;
@@ -154,6 +154,16 @@ h5 {
     margin-bottom: 20px;
   }
 }
+.section-card {
+  text-align: justify;
+  padding: 4rem;
+  background-color: #e7e7e7ab;
+  box-shadow: 0 0 20px grey;
+}
+.section-card p {
+  font-size: 1.5rem!important;
+}
+
 .nav-link {
   letter-spacing: 1px;
   overflow: hidden;
