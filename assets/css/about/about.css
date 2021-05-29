@@ -1,0 +1,22 @@
+.first-slide_margin {
+  margin-top: 20vh;
+}
+.hero-section {
+  align-items: center;
+  justify-content: center;
+  height: 75vh;
+  background-image: url("/assets/img/admissions/sec-3.jpg");
+  background-position: center;
+  /* background-color: khaki; */
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: 1s;
+  width: 50%;
+  margin: auto;
+}
+.hero-section:hover {
+  /* background-color: red; */
+  width: 100%;
+
+
+}
