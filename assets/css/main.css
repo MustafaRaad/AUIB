@@ -1,7 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
 body {
   font-family: "Ubuntu", sans-serif;
   background-color: #e7e7e7;
+  scroll-behavior: smooth;
 }
 h1 {
   font-size: 3rem;
@@ -21,20 +22,20 @@ h5 {
   font-size: 2rem;
 }
 .main-bg-auib {
-  background-color: #AE1836 !important;
+  background-color: #ae1836 !important;
 }
 
 .accent-bg-auib {
-  background-color: #DED9D2 !important;
+  background-color: #ded9d2 !important;
 }
 .main-txt-auib-hov {
   text-align: left;
-  color: #AE1836 !important;
+  color: #ae1836 !important;
   transition: 0.3s;
 }
 .main-txt-auib {
   text-align: left;
-  color: #AE1836 !important;
+  color: #ae1836 !important;
   transition: 0.3s;
 }
 .main-txt-auib-hov:hover {
@@ -43,17 +44,17 @@ h5 {
 .accent-txt-auib {
   /* text-align: left; */
 
-  color: #867970 ;
+  color: #867970;
 }
 .secondary0-bg-auib {
   text-align: left;
   background-color: #303030;
 }
 .secondary1-bg-auib {
-  background-color: #DED9D2;
+  background-color: #ded9d2;
 }
 .secondary2-bg-auib {
-  background-color: #8D7C71;
+  background-color: #8d7c71;
 }
 
 .bd-placeholder-img {
@@ -107,8 +108,8 @@ h5 {
   content: "";
   width: 0;
   height: 0;
-  border-left: 2px solid #AE1836;
-  border-top: 2px solid #AE1836;
+  border-left: 2px solid #ae1836;
+  border-top: 2px solid #ae1836;
   opacity: 0;
   position: absolute;
   top: 0;
@@ -116,8 +117,8 @@ h5 {
   transition: all 0.3s;
 }
 .btn:after {
-  border-right: 2px solid #AE1836;
-  border-bottom: 2px solid #AE1836;
+  border-right: 2px solid #ae1836;
+  border-bottom: 2px solid #ae1836;
   border-left: none;
   border-top: none;
   left: auto;
@@ -137,7 +138,7 @@ h5 {
 }
 .btn span:before {
   content: "";
-  background: #AE1836;
+  background: #ae1836;
   width: 100%;
   height: 100%;
   transform: scale(0);
@@ -162,7 +163,7 @@ h5 {
   box-shadow: 0 0 20px grey;
 }
 .section-card p {
-  font-size: 1.5rem!important;
+  font-size: 1.5rem !important;
 }
 
 .nav-link {
@@ -172,12 +173,12 @@ h5 {
   transition: all 0.4s ease 0s;
 }
 .nav-link:hover {
-  color: #AE1836;
+  color: #ae1836;
 }
 .nav-link:before,
 .nav-link:after {
   content: "";
-  border: 1px solid #AE1836;
+  border: 1px solid #ae1836;
   border-top: none;
   border-bottom: none;
   transform: scale(0, 1);
@@ -189,7 +190,7 @@ h5 {
   transition: all 0.4s ease 0s;
 }
 .nav-link:after {
-  border: 1px solid #AE1836;
+  border: 1px solid #ae1836;
   border-left: none;
   border-right: none;
   transform: scale(1, 0);
@@ -228,7 +229,7 @@ h5 {
   color: #fff;
 }
 .m-footer a:hover {
-  color: #AE1836 !important;
+  color: #ae1836 !important;
 }
 .m-footer p {
   font-size: 1.5rem;
@@ -388,25 +389,22 @@ h5 {
   font-weight: bold;
 }
 
-.main_title_text{
+.main_title_text {
   font-size: 5vh !important;
 }
 
-.menu_item_text{
+.menu_item_text {
   font-size: 3vh !important;
 }
 
-.paragraph_text{
+.paragraph_text {
   font-size: 3vh !important;
 }
 
-.card_header_text{
+.card_header_text {
   font-size: 4vh !important;
 }
 
-.card_body_text{
+.card_body_text {
   font-size: 3vh !important;
 }
-
-
-
