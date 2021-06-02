@@ -5,6 +5,29 @@ body {
   scroll-behavior: smooth;
   transition: 0.5s;
 }
+
+/* ---------------------scroll-bar style-------------------- */
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #fff; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #ae1836; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #8b122b; 
+}
+/* ---------------------scroll-bar style-------------------- */
+
 h1 {
   font-size: 3rem;
   font-weight: 700;

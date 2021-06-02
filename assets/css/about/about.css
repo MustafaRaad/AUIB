@@ -190,3 +190,14 @@
 #Membership li::marker {
 font-size: 4vw;
 }
+#Accreditation .row{
+  align-items: center;
+}
+
+#American {
+  background-image: url("../../img/about/american.jpg");
+  background-position: top right;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+}
