@@ -8,7 +8,6 @@
   margin-top: 15vh;
   height: 75vh;
   padding: 9rem 0;
-  
 }
 .steper div {
   text-align: center;
@@ -22,18 +21,6 @@
   font-size: 1.6rem;
   color: #303030;
 }
-/* .steper:hover path.cls-2:hover,rect.cls-1:hover {
-  fill: #ab0a3d;
-}
-.steper:hover polygon.cls-2:hover {
-  fill: #740f27;
-}
-polygon.cls-3:hover {
-  fill: #c45665;
-}
-path{
-    pointer-events:all;
-} */
 .content-section {
   /* box-shadow: 0px 0px 10px #ccc; */
   margin: 100px 0;
@@ -54,8 +41,8 @@ path{
   margin-top: 48px;
 }
 .content-section .content-side-bg {
-  background-image: url("../../img/admissions/content-bg.jpg");
-  background-position: top;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400.64 250.29'%3E%3Cdefs%3E%3Cstyle%3E.auib-section_card-1%7Bfill:%23ae1836;%7D.auib-section_card-2%7Bfill:%23fff;%7D%3C/style%3E%3C/defs%3E%3Cg id='Layer_2' data-name='Layer 2'%3E%3Cg id='Layer_1-2' data-name='Layer 1'%3E%3Cg id='Layer_2-2' data-name='Layer 2'%3E%3Cg id='Layer_1-2-2' data-name='Layer 1-2'%3E%3Crect class='auib-section_card-1' x='0.64' y='0.29' width='400' height='250'/%3E%3Crect class='auib-section_card-2' width='15' height='190'/%3E%3Cpolygon class='auib-section_card-2' points='11.26 19.95 11.26 48.74 27.27 34.34 11.26 19.95'/%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  background-position: top left;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -80,10 +67,10 @@ path{
   background-repeat: no-repeat;
 }
 .content-side {
-  padding: 3rem 6rem 3rem 7rem;
+  padding: 3% 3% 3% 6%;
 }
 
-.apply-cards > div > .col-3 figure{
+.apply-cards > div > .col-3 figure {
   padding: 30px 30px 30px 60px;
   color: #000;
   text-align: justify;
@@ -95,14 +82,14 @@ path{
   margin-bottom: 20px;
 }
 .apply-cards div .col-3 {
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 360.64 360.29'%3E%3Cdefs%3E%3Cstyle%3E.cls-1%7Bfill:%23a9a9ab;%7D.cls-2%7Bfill:%23fff;%7D%3C/style%3E%3C/defs%3E%3Cg id='Layer_2' data-name='Layer 2'%3E%3Cg id='Layer_1-2' data-name='Layer 1'%3E%3Crect class='cls-1' x='0.64' y='0.29' width='360' height='360'/%3E%3Crect class='cls-2' width='27.57' height='320.85'/%3E%3Cpolygon class='cls-2' points='24.69 33.57 24.69 65.63 40.71 49.6 24.69 33.57'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 360.64 360.29'%3E%3Cdefs%3E%3Cstyle%3E.auib-card-1%7Bfill:%23a9a9ab;%7D.auib-card-2%7Bfill:%23fff;%7D%3C/style%3E%3C/defs%3E%3Cg id='Layer_2' data-name='Layer 2'%3E%3Cg id='Layer_1-2' data-name='Layer 1'%3E%3Crect class='auib-card-1' x='0.64' y='0.29' width='360' height='360'/%3E%3Crect class='auib-card-2' width='27.57' height='320.85'/%3E%3Cpolygon class='auib-card-2' points='24.69 33.57 24.69 65.63 40.71 49.6 24.69 33.57'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
   transition: ease-in-out 0.5s;
 }
-.apply-cards div .col-3:hover{
-background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 360.64 360.29'%3E%3Cdefs%3E%3Cstyle%3E.cls-1%7Bfill:%23b4a3a6;%7D.cls-2%7Bfill:%23fff;%7D%3C/style%3E%3C/defs%3E%3Cg id='Layer_2' data-name='Layer 2'%3E%3Cg id='Layer_1-2' data-name='Layer 1'%3E%3Crect class='cls-1' x='0.64' y='0s.29' width='360' height='360'/%3E%3Crect class='cls-2' width='27.57' height='320.85'/%3E%3Cpolygon class='cls-2' points='24.69 33.57 24.69 65.63 40.71 49.6 24.69 33.57'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+.apply-cards div .col-3:hover {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 360.64 360.29'%3E%3Cdefs%3E%3Cstyle%3E.auib-card-1%7Bfill:%23b4a3a6;%7D.auib-card-2%7Bfill:%23fff;%7D%3C/style%3E%3C/defs%3E%3Cg id='Layer_2' data-name='Layer 2'%3E%3Cg id='Layer_1-2' data-name='Layer 1'%3E%3Crect class='auib-card-1' x='0.64' y='0s.29' width='360' height='360'/%3E%3Crect class='auib-card-2' width='27.57' height='320.85'/%3E%3Cpolygon class='auib-card-2' points='24.69 33.57 24.69 65.63 40.71 49.6 24.69 33.57'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
 }
 .title {
   font-size: calc(100% + 30px);
@@ -110,9 +97,9 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
   margin: 50px auto;
 }
 
-.icon svg{
-      width: 110px;
-      margin: 25px;
+.icon svg {
+  width: 110px;
+  margin: 25px;
 }
 /*-----------------------------*/
 /***** Apollo Glass Effect *****/
@@ -120,23 +107,27 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 
 /* Common style */
 .glass-effect {
-	overflow: hidden;
+  overflow: hidden;
 }
 figure.effect-apollo figcaption::before {
   position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	background: rgba(255,255,255,0.5);
-	content: '';
-	-webkit-transition: -webkit-transform 2s;
-	transition: transform 2s;
-	-webkit-transform: scale3d(1.9,1.4,1) rotate3d(0,0,1,45deg) translate3d(0,-100%,0);
-	transform: scale3d(1.9,1.4,1) rotate3d(0,0,1,45deg) translate3d(0,-100%,0);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.5);
+  content: "";
+  -webkit-transition: -webkit-transform 2s;
+  transition: transform 2s;
+  -webkit-transform: scale3d(1.9, 1.4, 1) rotate3d(0, 0, 1, 45deg)
+    translate3d(0, -100%, 0);
+  transform: scale3d(1.9, 1.4, 1) rotate3d(0, 0, 1, 45deg)
+    translate3d(0, -100%, 0);
 }
 
 figure.effect-apollo:hover figcaption::before {
-	-webkit-transform: scale3d(1.9,1.4,1) rotate3d(0,0,1,45deg) translate3d(0,100%,0);
-	transform: scale3d(1.9,1.4,1) rotate3d(0,0,1,45deg) translate3d(0,100%,0);
+  -webkit-transform: scale3d(1.9, 1.4, 1) rotate3d(0, 0, 1, 45deg)
+    translate3d(0, 100%, 0);
+  transform: scale3d(1.9, 1.4, 1) rotate3d(0, 0, 1, 45deg)
+    translate3d(0, 100%, 0);
 }

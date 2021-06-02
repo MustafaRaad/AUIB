@@ -28,6 +28,6 @@ time, mark, audio, video {
 footer, header, hgroup, menu, nav, section, main {
 	display: block;
 } */
-ol, ul {
+/* ol, ul {
 	list-style: none;
-}
+} */

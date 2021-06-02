@@ -4,6 +4,9 @@
   /* place-content: center !important; */
   z-index: 500;
 }
+.navbar ul{
+list-style-type: none;
+}
 .navbar .left {
   padding-left: 5rem;
 }

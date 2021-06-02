@@ -3,6 +3,7 @@ body {
   font-family: "Ubuntu", sans-serif;
   background-color: #e7e7e7;
   scroll-behavior: smooth;
+  transition: 0.5s;
 }
 h1 {
   font-size: 3rem;
@@ -21,6 +22,9 @@ h4 {
 h5 {
   font-size: 2rem;
 }
+.row{
+  overflow: hidden;
+}
 .main-bg-auib {
   background-color: #ae1836 !important;
 }
@@ -34,8 +38,8 @@ h5 {
   transition: 0.3s;
 }
 .main-txt-auib {
-  text-align: left;
-  color: #ae1836 !important;
+  /* text-align: left; */
+  color: #AE1836 !important;
   transition: 0.3s;
 }
 .main-txt-auib-hov:hover {
@@ -391,6 +395,7 @@ h5 {
 
 .main_title_text {
   font-size: 5vh !important;
+  font-weight: 600;
 }
 
 .menu_item_text {
@@ -399,6 +404,9 @@ h5 {
 
 .paragraph_text {
   font-size: 3vh !important;
+  font-weight: 300;
+  margin: 15px auto;
+  text-align: justify;
 }
 
 .card_header_text {
@@ -407,4 +415,5 @@ h5 {
 
 .card_body_text {
   font-size: 3vh !important;
+  font-weight: 400;
 }

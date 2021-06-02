@@ -5,18 +5,188 @@
   align-items: center;
   justify-content: center;
   height: 75vh;
-  background-image: url("/assets/img/admissions/sec-3.jpg");
+  background-image: url("/assets/img/about/hero-section.jpeg");
   background-position: center;
   /* background-color: khaki; */
   background-repeat: no-repeat;
   background-size: cover;
-  transition: 1s;
+  transition: 1.2s;
   width: 50%;
   margin: auto;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .hero-section:hover {
   /* background-color: red; */
   width: 100%;
+}
+.hero-section_div {
+  width: 100%;
+  height: 100%;
+  transition: 0.3s;
+  cursor: pointer;
+  display: flex;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: space-evenly;
+  align-items: center;
+  opacity: 0;
+  font-size: 1vh;
+  font-weight: 600;
+}
+.hero-section_div:hover {
+  background: rgba(174, 24, 54, 0.3);
+  background: -webkit-linear-gradient(
+    to bottom,
+    rgba(174, 24, 54, 0.3),
+    rgba(36, 11, 54, 0.3)
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to bottom,
+    rgba(174, 24, 54, 0.3),
+    rgba(36, 11, 54, 0.3)
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  opacity: 1;
+  font-size: 3.5vh;
+}
+.hero-section_div a:hover {
+  border: 1px solid #fff;
+  font-size: 4vh;
+}
+.scrolling-arrow {
+  width: 30px;
+  position: relative;
+  /* margin-top: auto; */
+  margin: auto;
+  bottom: 50px;
+}
+.scrolling-arrow path.scrolling-arrow-1:hover {
+  transition: ease-in-out 0.3s;
+  fill: #e7bcc5;
+}
 
+.content-section {
+  /* box-shadow: 0px 0px 10px #ccc; */
+  margin: 100px 0;
+  /* font-size: calc(100% + 10px); */
+  display: flex;
+  flex-direction: column;
+}
+.slide-title {
+  font-size: 3vw;
+  font-weight: 700;
+  text-align: center;
+  margin: auto;
+  padding: 15px;
+  width: fit-content;
+}
+.content-side {
+  padding: 5% 5% 5% 8.5%;
+  color: #fff;
+}
+.photo-side_mission {
+  background-image: url("../../img/about/our-mission.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+}
+.content-section .content-side-bg {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400.64 250.29'%3E%3Cdefs%3E%3Cstyle%3E.auib-section_card-1%7Bfill:%23ae1836;%7D.auib-section_card-2%7Bfill:%23fff;%7D%3C/style%3E%3C/defs%3E%3Cg id='Layer_2' data-name='Layer 2'%3E%3Cg id='Layer_1-2' data-name='Layer 1'%3E%3Cg id='Layer_2-2' data-name='Layer 2'%3E%3Cg id='Layer_1-2-2' data-name='Layer 1-2'%3E%3Crect class='auib-section_card-1' x='0.64' y='0.29' width='400' height='250'/%3E%3Crect class='auib-section_card-2' width='15' height='190'/%3E%3Cpolygon class='auib-section_card-2' points='11.26 19.95 11.26 48.74 27.27 34.34 11.26 19.95'/%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  background-position: top left;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.content-section .content-photo1 {
+  background-image: url("../../img/about/our-mission.jpeg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.black-bg {
+  background-color: rgba(148, 148, 148, 0.1);
+  padding: 0 0 0 2vw;
+}
+.h-100vh {
+  height: 100vh;
+  align-items: center;
+  overflow: hidden;
+}
+/* .divided-section{
 
+} */
+.divided-section_left {
+  background-image: url("/assets/img/about/AUIB.jpeg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-right: 2px solid #fff;
+  height: 90vh;
+}
+.divided-section_right {
+  background-image: url("/assets/img/about/management.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-left: 2px solid #fff;
+  height: 90vh;
+}
+.section-card {
+  place-self: center;
+}
+.divided-section_para-hover {
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 80%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.divided-section_title {
+  transform: translate(0%, 650%);
+  margin: auto;
+  opacity: 1;
+  color: #ae1836;
+  /* -webkit-text-stroke: 0.2px #fff; */
+  text-shadow: 0px 0px 10px #e6e6e6;
+}
+.divided-section:hover .divided-section_title {
+  opacity: 0;
+}
+.divided-section_overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(174, 24, 54, 0.8);
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: 0.5s ease;
+}
+
+.divided-section:hover .divided-section_overlay {
+  height: 100%;
+}
+
+.membership_photo {
+  background-image: url("../../img/about/membership.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  padding: 15px;
+}
+#Membership ul {
+  /* list-style-type:disc!important; */
+  list-style-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 178.67 200'%3E%3Cdefs%3E%3Cstyle%3E.list-ico-1,.list-ico-2,.list-ico-3,.list-ico-4%7Bfill:%23ae1836;%7D.list-ico-1%7Bopacity:0.3;%7D.list-ico-1,.list-ico-2,.list-ico-3%7Bisolation:isolate;%7D.list-ico-2%7Bopacity:0.3;%7D.list-ico-3%7Bopacity:0.4;%7D%3C/style%3E%3C/defs%3E%3Cg id='Layer_2' data-name='Layer 2'%3E%3Cg id='Layer_1-2' data-name='Layer 1'%3E%3Cpath class='list-ico-1' d='M178.67,100,0,0V200Z'/%3E%3Cpath class='list-ico-2' d='M139.2,122,0,44.13V200Z'/%3E%3Cpath class='list-ico-2' d='M139.2,78,0,0V155.87Z'/%3E%3Cpath class='list-ico-3' d='M99.73,144.13,0,88.4V200Z'/%3E%3Cpath class='list-ico-3' d='M60.4,166.13,0,132.27V200Z'/%3E%3Cpath class='list-ico-3' d='M99.73,55.87,0,0V111.6Z'/%3E%3Cpath class='list-ico-3' d='M60.4,33.87,0,0V67.73Z'/%3E%3Cpath class='list-ico-4' d='M21.2,188.13,0,176.27V200Z'/%3E%3Cpath class='list-ico-4' d='M21.2,11.87,0,0V23.73Z'/%3E%3Cpath class='list-ico-4' d='M0,132.27v23.6l21.2-11.74L0,132.27Z'/%3E%3Cpath class='list-ico-4' d='M0,88.4v23.2L20.8,100,0,88.4Z'/%3E%3Cpath class='list-ico-4' d='M0,44.13v23.6L21.2,55.87Z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  font-size: 1.3vw;
+  /* font-weight: 300; */
+}
+#Membership .col-6{
+  padding-left: 4vw;
+}
+#Membership li::marker {
+font-size: 4vw;
 }
