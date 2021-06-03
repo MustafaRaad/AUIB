@@ -221,6 +221,7 @@ Main Components
   -o-transform: translateY(-50%);
   transform: translateY(-50%);
   display: none;
+  list-style-type: none;
 }
 .cd-vertical-nav a {
   display: block;

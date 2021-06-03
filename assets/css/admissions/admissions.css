@@ -17,10 +17,33 @@
   font-size: 1.5rem;
   color: #6b6b6b;
 }
-.steper a:hover {
+.steper-icons svg {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.steper-icons:hover svg {
+  width: 104%;
+  transition: ease-in-out 0.3s;
+
+}
+.steper-icons:hover a {
   font-size: 1.6rem;
   color: #303030;
 }
+.steper-icons:hover polygon.cls-3 {
+  fill: #b6747d;
+}
+.steper-icons:hover path.cls-2 {
+  fill: #ae1836;
+}
+.steper-icons:hover polygon.cls-2 {
+  fill: #740f27;
+}
+.steper-icons:hover rect.cls-1 {
+  fill: #ae1836;
+}
+
 .content-section {
   /* box-shadow: 0px 0px 10px #ccc; */
   margin: 100px 0;
@@ -100,6 +123,15 @@
 .icon svg {
   width: 110px;
   margin: 25px;
+}
+.icon:hover path.icons-date-1 {
+  fill: #ae1836;
+}
+.icon:hover polygon.icons-date-1 {
+  fill: #ae1836;
+}
+.icon:hover rect.icons-date-2 {
+  fill: #ae1836;
 }
 /*-----------------------------*/
 /***** Apollo Glass Effect *****/
