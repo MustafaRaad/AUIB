@@ -59,10 +59,6 @@
   margin: auto;
   bottom: 50px;
 }
-.scrolling-arrow path.scrolling-arrow-1:hover {
-  transition: ease-in-out 0.3s;
-  fill: #e7bcc5;
-}
 
 .content-section {
   /* box-shadow: 0px 0px 10px #ccc; */
