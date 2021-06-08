@@ -116,7 +116,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   border-right: 2px solid #fff;
-  height: 90vh;
+  height: 100vh;
 }
 .divided-section_right {
   background-image: url("/assets/img/about/management.jpg");
@@ -124,7 +124,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   border-left: 2px solid #fff;
-  height: 90vh;
+  height: 100vh;
 }
 .section-card {
   place-self: center;
@@ -140,7 +140,7 @@
   transform: translate(-50%, -50%);
 }
 .divided-section_title {
-  transform: translate(0%, 650%);
+  transform: translate(0%, 700%);
   margin: auto;
   opacity: 1;
   color: #ae1836;
