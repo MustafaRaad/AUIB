@@ -1,0 +1,147 @@
+.first-slide_margin {
+  margin-top: 10vh;
+  background-image: url("../../img/academics/decoration.svg");
+  background-position: top;
+  background-repeat: repeat;
+  background-size: 50%;
+}
+.hero-section {
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
+  width: 100%;
+  margin: auto;
+}
+
+.hero-section_div {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-content: center;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.hero-section_div a {
+  font-size: 2.5vw;
+  font-weight: 600;
+  text-align: center;
+  color: #303030;
+}
+.hero-section_div svg {
+  width: 15vw;
+  margin: 20px auto;
+  transition: 0.3s;
+  transition-timing-function: ease-in-out;
+}
+
+.hero-section .col-3 {
+  transition: 0.7s;
+  transition-timing-function: ease-in-out;
+}
+.hero-section .col-3:hover {
+  flex: 0 0 33.333333%;
+  max-width: 33.333333%;
+}
+.hero-section .col-3:hover {
+  flex: 0 0 33.333333%;
+  max-width: 33.333333%;
+}
+.hero-section .col-3:hover a {
+  font-size: 3.5vw;
+}
+.hero-section .col-3:hover svg {
+  font-size: 3.5vw;
+  width: 18vw;
+}
+.scrolling-arrow {
+  width: 30px;
+  position: relative;
+  margin: auto;
+  bottom: 50px;
+}
+
+.content-section {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+.colleges-banner {
+  background-image: url("../../img/academics/banner.svg");
+  background-position: bottom right;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 0.8vh;
+  height: 20vh;
+  font-size: 6vh;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: -8vh;
+  z-index: 5;
+}
+.colleges-rows {
+  height: 30vh;
+  padding: 0;
+  filter: grayscale(1);
+}
+.colleges-rows:hover {
+  filter: grayscale(0);
+}
+.colleges-rows div {
+  transition: 0.7s;
+  background-color: #30303098;
+}
+.colleges-rows div:hover {
+  background-color: #3030303f;
+}
+.colleges-rows h1 {
+  margin: 10px;
+}
+.colleges-rows .nav-link {
+  color: white;
+  content-visibility: hidden;
+  visibility: hidden;
+  font-size: 1.5vw;
+}
+.colleges-rows:hover .nav-link {
+  content-visibility: visible;
+  visibility: visible;
+}
+.colleges-row-1 {
+  background-image: url("../../img/academics/college-2.jpg");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.colleges-row-2 {
+  background-image: url("../../img/academics/college-1.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.colleges-row-3 {
+  background-image: url("../../img/academics/college-3.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#Libral{
+    background: linear-gradient(to top, #ddd, #f8f9fa); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+#Libral > div{
+  background-image: url("../../img/academics/libral.svg");
+  background-position: bottom right;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.slide-title {
+  font-size: 3vw;
+  font-weight: 700;
+  text-align: center;
+  margin: auto;
+  padding: 15px;
+  width: fit-content;
+}
+.content-side {
+  padding: 5% 5% 5% 8.5%;
+  color: #fff;
+}

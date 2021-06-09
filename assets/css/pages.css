@@ -6,3 +6,13 @@
   background-repeat: no-repeat;
   /* background-attachment: fixed; */
 }
+
+.black-bg {
+  background-color: rgba(148, 148, 148, 0.1);
+  padding: 0 0 0 2vw;
+}
+.h-100vh {
+  height: 100vh;
+  align-items: center;
+  overflow: hidden;
+}

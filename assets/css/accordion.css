@@ -9,23 +9,20 @@
 
 .container_accordion .card_accordion {
     flex: 1;
-    transition: all 1s ease-in-out;
+    transition: all 0.7s linear;
     height: 75vmin;
     position: relative;
+    /* max-width: 60vw; */
 }
 
 .card__head_accordion{
-    font-size:16px;
-    font-weight: 800;
     width:100% !important;
-    
 }
 
 .container_accordion .card_accordion .card__head_accordion {
     color: white;
     background: rgb(172, 16, 60);
     padding: 0.5em;
-    /* transform: rotate(-90deg); */
     transform-origin: 0% 0%;
     transition: all 0.5s ease-in-out;
     min-width: 80%;
@@ -33,10 +30,9 @@
     position: absolute;
     bottom: 0;
     left: 0;
-    font-size: 1em;
     margin: unset !important;
-    /* white-space: nowrap; */
 }
+
 
 
 
@@ -51,13 +47,14 @@
 .container_accordion .card_accordion:hover .card__head_accordion {
     text-align: justify;
     text-justify: inter-word;
-    top: 40%;
+    /* top: 20%; */
     color: white;
     background: rgba(172, 16, 60, 0.5);
     font-size: 2em;
     transform: rotate(0deg);
     margin: 30px;
     line-height: 100%;
+    min-height: 50%;
 }
 
 .container_accordion .card_accordion img {

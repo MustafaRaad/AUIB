@@ -440,3 +440,7 @@ h5 {
   font-size: 3vh !important;
   font-weight: 400;
 }
+
+.smooth-scroll{
+  scroll-behavior: smooth;
+}

@@ -27,7 +27,7 @@ $(document).ready(function () {
   });
 });
 
-const links = document.querySelectorAll(".scrolling-arrow");
+const links = document.querySelectorAll('a[href^="#"]');
 
 for (const link of links) {
   link.addEventListener("click", clickHandler);

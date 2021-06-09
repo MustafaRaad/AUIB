@@ -5,9 +5,8 @@
   align-items: center;
   justify-content: center;
   height: 75vh;
-  background-image: url("/assets/img/about/hero-section.jpeg");
+  background-image: url("../../img/about/hero-section.jpeg");
   background-position: center;
-  /* background-color: khaki; */
   background-repeat: no-repeat;
   background-size: cover;
   transition: 1.2s;
@@ -16,7 +15,6 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .hero-section:hover {
-  /* background-color: red; */
   width: 100%;
 }
 .hero-section_div {
@@ -98,20 +96,8 @@
   background-size: cover;
   background-repeat: no-repeat;
 }
-.black-bg {
-  background-color: rgba(148, 148, 148, 0.1);
-  padding: 0 0 0 2vw;
-}
-.h-100vh {
-  height: 100vh;
-  align-items: center;
-  overflow: hidden;
-}
-/* .divided-section{
-
-} */
 .divided-section_left {
-  background-image: url("/assets/img/about/AUIB.jpeg");
+  background-image: url("../../img/about/AUIB.jpeg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -119,7 +105,7 @@
   height: 100vh;
 }
 .divided-section_right {
-  background-image: url("/assets/img/about/management.jpg");
+  background-image: url("../../img/about/management.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -180,13 +166,13 @@
   font-size: 1.3vw;
   /* font-weight: 300; */
 }
-#Membership .col-6{
+#Membership .col-6 {
   padding-left: 4vw;
 }
 #Membership li::marker {
-font-size: 4vw;
+  font-size: 4vw;
 }
-#Accreditation .row{
+#Accreditation .row {
   align-items: center;
 }
 
