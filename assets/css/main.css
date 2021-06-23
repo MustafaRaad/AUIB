@@ -14,17 +14,17 @@ body {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #fff; 
+  background: #fff;
 }
- 
+
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #ae1836; 
+  background: #ae1836;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #8b122b; 
+  background: #8b122b;
 }
 /* ---------------------scroll-bar style-------------------- */
 
@@ -45,7 +45,7 @@ h4 {
 h5 {
   font-size: 2rem;
 }
-.row{
+.row {
   overflow: hidden;
 }
 .main-bg-auib {
@@ -62,7 +62,7 @@ h5 {
 }
 .main-txt-auib {
   /* text-align: left; */
-  color: #AE1836 !important;
+  color: #ae1836 !important;
   transition: 0.3s;
 }
 .main-txt-auib-hov:hover {
@@ -415,7 +415,10 @@ h5 {
   color: red;
   font-weight: bold;
 }
-
+.main-title_lg {
+  font-size: 4vw !important;
+  font-weight: 600;
+}
 .main_title_text {
   font-size: 5vh !important;
   font-weight: 600;
@@ -441,6 +444,6 @@ h5 {
   font-weight: 400;
 }
 
-.smooth-scroll{
+.smooth-scroll {
   scroll-behavior: smooth;
 }

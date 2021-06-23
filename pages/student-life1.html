@@ -30,10 +30,17 @@
     <link rel="stylesheet" href="../assets/css/news-cards.css" />
     <link rel="stylesheet" href="../assets/css/cards.css" />
     <link rel="stylesheet" href="../assets/css/pages.css" />
-    <link rel="stylesheet" href="../assets/css/about/about.css" />
+    <link rel="stylesheet" href="/assets/css/student-life/student-life.css" />
     <!-- Resource style -->
+    <link rel="stylesheet" href="/assets/css/student-life/glide.core.min.css" />
+
+    <script src="/assets/js/student-life.js"></script>
+    <script src="/assets/js/hover.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/110/three.min.js"></script>
+    <script src="/assets/js/glide.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
-    <title>About</title>
+    <title>Admissions</title>
   </head>
 
   <body>
@@ -279,186 +286,159 @@
     </header>
 
     <!-- ---------------------------- -->
-    <section class="cd-section first-slide_margin">
-      <div class="container-fluid">
-        <div class="row hero-section">
-          <div class="hero-section_div">
-            <a href="#OurMission" class="nav-link text-white">Our Mission</a>
-            <a href="#AUIB" class="nav-link text-white">AUIB</a>
-            <a href="#Management" class="nav-link text-white">Management</a>
-            <a href="#Membership" class="nav-link text-white">Membership </a>
-            <a href="#American" class="nav-link text-white"
-              >American Education!</a
-            >
-          </div>
-          <a href="#OurMission" class="scrolling-arrow">
-            <img src="../assets/img/cd-icon-arrow.svg" alt="" />
-          </a>
+<section class=" cd-section first-slide_margin">
+      <div class="side-indicator">
+        <div class="line"></div>
+        <div class="index one">
+          <p>1</p>
+        </div>
+        <div class="index two">
+          <p>2</p>
+        </div>
+        <div class="index three">
+          <p>3</p>
+        </div>
+        <div class="index four">
+          <p>4</p>
         </div>
       </div>
-    </section>
-
-    <section class="content-section" id="OurMission">
-      <div class="container-fluid">
-        <div class="row h-100vh black-bg">
-          <div class="col-6">
-            <h1 class="slide-title main-txt-auib">Our Mission</h1>
-            <p class="paragraph_text">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur
-              optio molestias atque hic dolores dolorum, amet unde. Ex ducimus
-              accusantium obcaecati quis, architecto temporibus mollitia illum
-              magni, et fuga unde! Lorem ipsum dolor sit, amet consectetur
-              adipisicing elit. Tenetur optio molestias atque hic mollitia illum
-              optio molestias atque hic dolores dolorum, amet unde. Ex ducimus
-              accusantium obcaecati quis, architecto temporibus mollitia illum
-              magni, et fuga unde! Lorem ipsum dolor sit, amet consectetur
-              adipisicing elit. Tenetur optio molestias atque hic mollitia illum
-              magni, et fuga unde!
-            </p>
-            <a class="btn" href="#">
-              <span>Read More</span>
-            </a>
-          </div>
-
-          <div class="col-6 photo-side_mission"></div>
-          <a href="#AUIB" class="scrolling-arrow">
-            <img src="../assets/img/cd-icon-arrow.svg" alt="" />
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <section class="content-section">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-6 divided-section_left divided-section" id="AUIB">
-            <h1 class="slide-title divided-section_title">AUIB</h1>
-            <div class="divided-section_overlay">
-              <div class="divided-section_para-hover">
-                <h1 class="slide-title">AUIB</h1>
-                <p class="paragraph_text">
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                  Tenetur optio molestias atque hic dolores dolorum, amet unde.
-                  Ex ducimus accusantium obcaecati quis, architecto temporibus
-                  mollitia illum magni, et fuga unde! Lorem ipsum dolor sit,
-                  amet consectetur adipisicing elit. Tenetur optio molestias
-                  atque hic mollitia illum optio molestias atque hic dolores
-                  dolorum, amet unde. Ex ducimus accusantium obcaecati quis,
-                  architecto temporibus mollitia illum magni, et fuga unde!
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                  Tenetur optio molestias atque hic mollitia illum magni, et
-                </p>
-                <a class="btn" href="#">
-                  <span>Read More</span>
-                </a>
-              </div>
+      <div class="content">
+        <div class="text-wrapper">
+          <div class="text">
+            <div id="title">
+              <h4>INDONESIA</h4>
+              <h4>KERALA</h4>
+              <h4>BALI</h4>
+              <h4>THAILAND</h4>
+            </div>
+            <div id="description">
+              <p>
+                As the larget archipelagic country in the world, Indonesia is
+                blessed with so many different people, cultures, customs,
+                traditions, artworks, food, animals, plants, landscapes, and
+                everything that made it almost like 100 (or even 200} countries
+                melted beautifully into one.
+              </p>
+              <p>
+                Kerala, a state on India's tropical Malabar Coast, has nearly
+                600km of Arabian Sea shoreline. It's known for its palm-lined
+                beaches and backwaters, a network of canals. Inland are the
+                Western Ghats, mountains whose slopes support tea, coffee and
+                spice plantations as well as wildlife.
+              </p>
+              <p>
+                Bali is an Indonesian island known for its forested volcanic
+                mountains, iconic rice paddies, beaches and coral reefs. The
+                island is home to religious sites such as cliffside Uluwatu
+                Temple. To the south, the beachside city of Kuta has lively
+                bars, while Seminyak, Sanur and Nusa Dua are popular resort
+                towns.
+              </p>
+              <p>
+                Thailand is a Southeast Asian country. It's known for tropical
+                beaches, opulent royal palaces, ancient ruins and ornate temples
+                displaying figures of Buddha. In Bangkok, the capital, an
+                ultramodern cityscape rises next to quiet canalside communities
+                and the iconic temples of Wat Arun, Wat Pho and the Emerald
+                Buddha Temple (Wat Phra Kaew).
+              </p>
+            </div>
+            <div class="btn">
+              <p>Explore</p>
+              <i class="fa fa-arrow-right"></i>
             </div>
           </div>
-          <div
-            class="col-6 divided-section_right divided-section"
-            id="Management"
-          >
-            <h1 class="slide-title divided-section_title">Management</h1>
-            <div class="divided-section_overlay">
-              <div class="divided-section_para-hover">
-                <h1 class="slide-title">Management</h1>
-                <p class="paragraph_text">
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                  Tenetur optio molestias atque hic dolores dolorum, amet unde.
-                  Ex ducimus accusantium obcaecati quis, architecto temporibus
-                  mollitia illum magni, et fuga unde! Lorem ipsum dolor sit,
-                  amet consectetur adipisicing elit. Tenetur optio molestias
-                  atque hic mollitia illum optio molestias atque hic dolores
-                  dolorum, amet unde. Ex ducimus accusantium obcaecati quis,
-                  architecto temporibus mollitia illum magni, et fuga unde!
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                  Tenetur optio molestias atque hic mollitia illum magni, et
-                </p>
-                <a class="btn" href="#">
-                  <span>Read More</span>
-                </a>
-              </div>
-            </div>
-          </div>
-          <a href="#Membership" class="scrolling-arrow">
-            <img src="../assets/img/cd-icon-arrow.svg" alt="" />
-          </a>
         </div>
-      </div>
-    </section>
-
-    <section class="content-section" id="Membership">
-      <div class="container-fluid membership_photo black-bg">
-        <h1 class="slide-title main-txt-auib">Membership</h1>
-        <div class="row p-5">
-          <div class="col-6">
-            <ul>
-              <li>American Council on Education</li>
-              <li>Council of Independent Colleges</li>
-              <li>
-                Association of American International Colleges and Universities
+        <div class="glide">
+          <div class="glide_cover"></div>
+          <div class="glide__track" data-glide-el="track">
+            <ul class="glide__slides">
+              <li class="glide__slide">
+                <div class="slide one">
+                  <p>Borobudur Temple, Indonesia</p>
+                  <div class="rating">
+                    <div class="circle active"></div>
+                    <div class="circle active"></div>
+                    <div class="circle active"></div>
+                    <div class="circle active"></div>
+                    <div class="circle"></div>
+                  </div>
+                  <div class="slider-image">
+                    <img src="/assets/img/student-life/slide1.jpg" />
+                    <div class="bookmark">
+                      <i class="fa fa-bookmark"></i>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="glide__slide">
+                <div class="slide two">
+                  <p>Kerala</p>
+                  <div class="rating">
+                    <div class="circle active"></div>
+                    <div class="circle active"></div>
+                    <div class="circle active"></div>
+                    <div class="circle active"></div>
+                    <div class="circle"></div>
+                  </div>
+                  <div class="slider-image">
+                    <img src="/assets/img/student-life/14.jpg" />
+                    <div class="bookmark">
+                      <i class="fa fa-bookmark"></i>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="glide__slide">
+                <div class="slide three">
+                  <p>Balinese Temple, Bali</p>
+                  <div class="rating">
+                    <div class="circle active"></div>
+                    <div class="circle active"></div>
+                    <div class="circle active"></div>
+                    <div class="circle active"></div>
+                    <div class="circle"></div>
+                  </div>
+                  <div class="slider-image">
+                    <img src="/assets/img/student-life/slide3.jpg" />
+                    <div class="bookmark">
+                      <i class="fa fa-bookmark"></i>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="glide__slide">
+                <div class="slide four">
+                  <p>Buddha Temple, Thailand</p>
+                  <div class="rating">
+                    <div class="circle active"></div>
+                    <div class="circle active"></div>
+                    <div class="circle active"></div>
+                    <div class="circle active"></div>
+                    <div class="circle"></div>
+                  </div>
+                  <div class="slider-image">
+                    <img src="/assets/img/student-life/slide4.jpg" />
+                    <div class="bookmark">
+                      <i class="fa fa-bookmark"></i>
+                    </div>
+                  </div>
+                </div>
               </li>
             </ul>
           </div>
-          <div class="col-6">
-            <ul>
-              <li>Association of International Educators</li>
-              <li>International Association of University Presidents</li>
-              <li>
-                Association of American International Colleges and Universities
-              </li>
-            </ul>
+          <div data-glide-el="controls" class="controls">
+            <div data-glide-dir="<" id="prev">
+              <i class="fa fa-arrow-left"></i>
+            </div>
+            <div data-glide-dir=">" id="next">
+              <i class="fa fa-arrow-right"></i>
+            </div>
           </div>
         </div>
       </div>
-    </section>
-
-    <section class="content-section" id="Accreditation">
-      <div class="container-fluid">
-        <div class="row p-5">
-          <div class="col-4 py-5">
-            <h1 class="slide-title main-txt-auib">Accreditation</h1>
-          </div>
-          <div class="col-7">
-            <p class="paragraph_text">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Asperiores ipsa earum architecto corporis dolorem vel recusandae
-              dolores, deserunt expedita, ex aliquam in provident eaque
-              voluptatibus magnam vitae? Magni, repudiandae impedit?
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="content-section" id="American">
-      <div class="container-fluid">
-        <div class="row py-5">
-          <div class="col-1"></div>
-          <div class="col-6">
-            <h1 class="slide-title main-txt-auib">
-              What is an American Education?
-            </h1>
-            <p class="paragraph_text">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur
-              optio molestias atque hic dolores dolorum, amet unde. Ex ducimus
-              accusantium obcaecati quis, architecto temporibus mollitia illum
-              magni, et fuga unde! Lorem ipsum dolor sit, amet consectetur
-              adipisicing elit. Tenetur optio molestias atque hic mollitia illum
-              optio molestias atque hic dolores dolorum, amet unde. Ex ducimus
-              accusantium obcaecati quis, architecto temporibus mollitia illum
-              magni, et fuga unde! Lorem ipsum dolor sit, amet consectetur
-              adipisicing elit. Tenetur optio molestias atque hic mollitia illum
-              magni, et fuga unde!
-            </p>
-            <a class="btn" href="#">
-              <span>Read More</span>
-            </a>
-          </div>
-          <div class="col-5"></div>
-        </div>
-      </div>
-    </section>
+      <div class="background"></div>
+</section>
 
     <section class="cd-section">
       <div class="cd-section-footer">
@@ -578,6 +558,11 @@
     </script>
 
     <!-- Intialize -->
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
     <script
       src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
       integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
