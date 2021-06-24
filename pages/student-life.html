@@ -30,7 +30,6 @@
     <link rel="stylesheet" href="../assets/css/news-cards.css" />
     <link rel="stylesheet" href="../assets/css/cards.css" />
     <link rel="stylesheet" href="../assets/css/pages.css" />
-    <!-- <link rel="stylesheet" href="../assets/css/about/about.css" /> -->
     <link
       rel="stylesheet"
       href="../assets/css/student-life/glide.core.min.css"
@@ -42,8 +41,13 @@
     <script src="../assets/js/hover.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/110/three.min.js"></script>
+    <!-- Carasoul -->
     <script src="../assets/js/glide.min.js"></script>
-    <title>About</title>
+    <!-- animation on scroll -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <title>Student Life</title>
   </head>
 
   <body>
@@ -325,6 +329,9 @@
                 traditions, artworks, food, animals, plants, landscapes, and
                 everything that made it almost like 100 (or even 200} countries
                 melted beautifully into one.
+                <a class="btn" href="#">
+                  <span>Explore</span>
+                </a>
               </p>
               <p>
                 Kerala, a state on India's tropical Malabar Coast, has nearly
@@ -332,6 +339,9 @@
                 beaches and backwaters, a network of canals. Inland are the
                 Western Ghats, mountains whose slopes support tea, coffee and
                 spice plantations as well as wildlife.
+                <a class="btn" href="#">
+                  <span>Explore</span>
+                </a>
               </p>
               <p>
                 Bali is an Indonesian island known for its forested volcanic
@@ -340,6 +350,9 @@
                 Temple. To the south, the beachside city of Kuta has lively
                 bars, while Seminyak, Sanur and Nusa Dua are popular resort
                 towns.
+                <a class="btn" href="#">
+                  <span>Explore</span>
+                </a>
               </p>
               <p>
                 Thailand is a Southeast Asian country. It's known for tropical
@@ -348,6 +361,9 @@
                 ultramodern cityscape rises next to quiet canalside communities
                 and the iconic temples of Wat Arun, Wat Pho and the Emerald
                 Buddha Temple (Wat Phra Kaew).
+                <a class="btn" href="#">
+                  <span>Explore</span>
+                </a>
               </p>
               <p>
                 as is a Southeast Asian country. It's known for tropical
@@ -356,13 +372,15 @@
                 ultramodern cityscape rises next to quiet canalside communities
                 and the iconic temples of Wat Arun, Wat Pho and the Emerald
                 Buddha Temple (Wat Phra Kaew).
+                <a class="btn" href="#">
+                  <span>Explore</span>
+                </a>
               </p>
               <!-- <div class="btn">
               <p>Explore</p>
               <i class="fa fa-arrow-right"></i>
             </div> -->
             </div>
-            
           </div>
         </div>
         <div class="glide">
@@ -418,13 +436,74 @@
       </div>
       <div class="background"></div>
     </section>
-<section class="">
-  <div class="campus p-5 accent-bg-auib main-txt-auib-hov">
-    <h1 class="main-title_lg">Campus Life</h1>
-  </div>
-</section>
 
-    <!-- <section class="cd-section">
+    <section class="campus p-5 accent-bg-auib" data-aos="zoom-in-up">
+      <h4  class="main-title_lg-thin main-txt-auib"
+        >Campus Life
+    </h4>
+      <p class="mb-4">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto, dolores
+        modi dolore autem laboriosam sunt consectetur
+      </p>
+      <a href="#VT" class="btn my-3">
+        <span>Explore the Universtity</span>
+        <i class="fas fa-arrow-down"></i>
+      </a>
+    </section>
+
+    <section
+      class="h-100vh"
+      id="VT"
+      data-aos="fade-up"
+      data-aos-anchor-placement="top-center"
+    >
+      <embed width="100%" height="100%" src="/virtualTour/index.html" />
+    </section>
+
+    <section class="p-5 accent-bg-auib content_section">
+      <div
+        class="row"
+        data-aos="fade-right"
+        data-aos-offset="300"
+        data-aos-easing="ease-in-sine"
+      >
+        <div class="col-6 paragraph_text">
+          <h1 class="main-title_lg-thin main-txt-auib">Special Needs</h1>
+          <hr class="hr" />
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero autem
+            commodi natus inventore sunt deleniti, placeat ducimus est
+            necessitatibus perspiciatis illum eveniet quasi ea adipisci
+            laudantium iste illo aliquam laborum. Lorem ipsum dolor sit amet,
+            eveniet quasi ea adipisci laudantium iste illo aliquam laborum.
+          </p>
+        </div>
+        <div class="col-6 special-needs"></div>
+      </div>
+    </section>
+
+    <section class="p-5 accent-bg-auib content_section">
+      <div
+        class="row"
+        data-aos="fade-right"
+        data-aos-offset="300"
+        data-aos-easing="ease-in-sine"
+      >
+        <div class="col-6 paragraph_text">
+          <h1 class="main-title_lg-thin main-txt-auib">AUIB FM</h1>
+          <hr class="hr" />
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero autem
+            laudantium iste illo aliquam laborum. Lorem ipsum dolor sit amet,
+            consectetur adipisicing elit. Vero autem commodi natus inventore
+            sunt deleniti, placeat ducimus est necessitatibus perspiciatis illum
+            eveniet quasi ea adipisci laudantium iste illo aliquam laborum.
+          </p>
+        </div>
+        <div class="col-6 auib-fm"></div>
+      </div>
+    </section>
+    <section class="cd-section">
       <div class="cd-section-footer">
         <div class="d-flex flex-column-reverse footer-section">
           <div
@@ -525,8 +604,11 @@
           </div>
         </div>
       </div>
-    </section> -->
-
+    </section>
+    <!-- Scripts  -->
+    <script>
+      AOS.init();
+    </script>
     <script src="../assets/js/sideNav.js"></script>
     <script src="../assets/js/app.js"></script>
     <script src="../assets/js/NavOnScroll.min.js"></script>

@@ -1,8 +1,3 @@
-body {
-  /* width: 100vw; */
-  /* height: 100vh; */
-  /* overflow: hidden;   */
-}
 .background {
   position: absolute;
   width: 100%;
@@ -98,6 +93,7 @@ body {
 #title h4 {
   opacity: 0;
   position: absolute;
+  font-weight: 400;
 }
 #title h4:nth-child(1) {
   opacity: 1;
@@ -127,25 +123,11 @@ body {
 #description p:nth-child(1) {
   opacity: 1;
 }
-.btn {
-  width: 150px;
-  /* background-color: #25609f; */
+#description .btn {
+  /* width: 120px; */
   display: flex;
   align-items: center;
-  padding: 10px 10px;
-  border-radius: 8px;
-  margin-top: 60px;
-  justify-content: space-evenly;
-  cursor: pointer;
-}
-
-.btn p {
-  color: white;
-  font-size: 18px;
-}
-
-.btn i {
-  color: white;
+  margin-top: 40px;
 }
 
 .glide {
@@ -255,6 +237,37 @@ body {
   color: gray;
   font-size: 12px;
   cursor: pointer;
+}
+.campus {
+  background-image: url(../../img/student-life/campus.svg);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: 20%;
+}
+.special-needs {
+  background-image: url(../../img/student-life/special-needs.png);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: 100%;
+}
+.auib-fm {
+  background-image: url(../../img/student-life/auib-fm.png);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: 100%;
+}
+.hr {
+  display: inline-flex;
+  justify-content: left;
+  border-top: 7px solid #ae1836;
+  width: 8%;
+  margin-top: -5px;
+}
+.content_section{
+    background-image: url(../../img/academics/decoration.svg);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: 100%;
 }
 /* 
 @media only screen and (max-width: 1600px) {

@@ -4,6 +4,10 @@ body {
   background-color: #e7e7e7;
   scroll-behavior: smooth;
   transition: 0.5s;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 /* ---------------------scroll-bar style-------------------- */
@@ -70,7 +74,6 @@ h5 {
 }
 .accent-txt-auib {
   /* text-align: left; */
-
   color: #867970;
 }
 .secondary0-bg-auib {
@@ -418,6 +421,9 @@ h5 {
 .main-title_lg {
   font-size: 4vw !important;
   font-weight: 600;
+}.main-title_lg-thin {
+  font-size: 4vw !important;
+  font-weight: 400;
 }
 .main_title_text {
   font-size: 5vh !important;
