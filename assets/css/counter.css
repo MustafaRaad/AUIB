@@ -1,97 +1,62 @@
 .counter{
-    color: #666;
-    background-color: #fff;
     text-align: center;
-    margin: 12px auto 15px;
-    border: 1px solid #fff;
-    box-shadow: 10px 10px 6px -6px rgba(0, 0, 0, 0.2);
-}
-.counter h3{
-    color: #fff;
-    background: linear-gradient(to left top,#ac103d,#867970);
-    font-size: 20px;
-    font-weight: 600;
-    letter-spacing: 1px;
-    text-transform: capitalize;
-    width: 90%;
-    padding: 15px 17px;
-    margin: -12px 0 17px -12px;
-    box-shadow: 4px 4px 4px rgba(0,0,0,0.2);
-    position: relative;
-    z-index: 1;
-}
-.counter h3:before,
-.counter h3:after{
-    content: "";
-    background: linear-gradient(to left bottom, #666 49%, transparent 40%);
-    width: 11px;
-    height: 11px;
-    position: absolute;
-    bottom: -11px;
-    left: 0;
-    z-index: -1;
-    transition: all 0.7s ease 0s;
-}
-.counter h3:after{
-    transform: rotate(180deg);
-    left: auto;
-    right: -11px;
-    bottom: auto;
-    top: 0;
-}
-.counter .counter-value{
-    font-size: 32px;
-    font-weight: 600;
-    margin: 0 0 15px;
-    display: block;
+    padding: 0 20px;
 }
 .counter .counter-icon{
+    font-size: 45px;
+    line-height: 80px;
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+    border: 2px solid #000000;
+}
+.counter .counter-icon .fas{
+margin: auto;
+}
+.counter .counter-content{
+    background-color: #fff;
+    padding: 15px 15px 15px;
+    border: 10px solid #435a69;
+    border-left: none;
+    border-right: none;
+}
+.counter .counter-value{
     color: #fff;
-    background: linear-gradient(to bottom,#ac103d,#bb224d);
-    font-size: 35px;
-    line-height: 70px;
-    width: 75px;
-    height: 70px;
-    margin: 0 auto -15px;
-    position: relative;
-    z-index: 1;
-    transition: all 0.5s ease 0s;
+    background:#435a69;
+    font-size: 28px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    padding: 6px 6px 3px;
+    margin: 0 -35px 15px;
+    display: block;
 }
-.counter .counter-icon i{ transition: all 0.5s ease 0s;margin: auto; }
-.counter:hover .counter-icon i{
-    text-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
-    transform: rotateY(360deg);
-    
+.counter h3{
+    font-size: 17px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    line-height: 22px;
+    margin: 0;
 }
-.counter .counter-icon:before,
-.counter .counter-icon:after{
-    content: "";
-    background: linear-gradient(to left bottom, #666 49%,transparent 50%);
-    width: 14px;
-    height: 14px;
-    position: absolute;
-    bottom: 0px;
-    left: -14px;
-    z-index: -1;
-    transition: all 0.7s ease 0s;
+.counter.green{ color: #3FA599; }
+.counter.green .counter-icon,
+.counter.green .counter-content{
+    border-color: #3FA599;
 }
-.counter .counter-icon:after{
-    transform: rotateY(180deg);
-    left: auto;
-    right: -14px;
+.counter.green .counter-value{ background: #3FA599; }
+.counter.yellow{ color: #ed7e2a; }
+.counter.yellow .counter-icon,
+.counter.yellow .counter-content{
+    border-color: #ed7e2a;
 }
-/* .counter.blue h3,
-.counter.blue .counter-icon{
-    background: linear-gradient(to left,#ac103d,#867970);
+.counter.yellow .counter-value{ background: #ed7e2a; }
+.counter.red{ color: #DE5644; }
+.counter.red .counter-icon,
+.counter.red .counter-content{
+    border-color: #DE5644;
 }
-.counter.purple h3,
-.counter.purple .counter-icon{
-    background: linear-gradient(to left,#ac103d,#867970);
-}
-.counter.yellow h3,
-.counter.yellow .counter-icon{
-    background: linear-gradient(to left,#ac103d,#867970);
-} */
-/* @media screen and (max-width:990px){
-    .counter{ margin-bottom: 60px; }
-} */
+.counter.red .counter-value{ background: #DE5644; }
+@media screen and (max-width:990px){
+    .counter{ margin-bottom: 40px; }
+}   

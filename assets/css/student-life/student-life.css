@@ -263,12 +263,6 @@
   width: 8%;
   margin-top: -5px;
 }
-.content_section{
-    background-image: url(../../img/academics/decoration.svg);
-  background-repeat: no-repeat;
-  background-position: right;
-  background-size: 100%;
-}
 /* 
 @media only screen and (max-width: 1600px) {
   .side-indicator {

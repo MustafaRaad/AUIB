@@ -1,12 +1,5 @@
-.slider {
-  display: flex;
-}
 .slider .card {
-  flex: 1;
-  margin: 0 10px;
   background: #fff;
-  box-shadow: 0 0 10px grey;
-  padding: 5px;
   max-height: 30rem;
 }
 .slider .card .img {
@@ -35,11 +28,29 @@
   margin-bottom: 5px;
 }
 .card .content p {
-  text-align: justify;
   margin: 15px 0;
 }
-.card .content .btn{
+.card .content .btn {
   display: block;
   text-align: left;
   margin-top: 10px;
 }
+
+.owl-nav{
+  display: flex;
+    justify-content: space-between;
+}
+.owl-carousel .owl-prev span {
+  display: inline-block;
+  padding: 5px 25px;
+  border-radius: 50%;
+  font-size: 40px;
+}
+.owl-carousel .owl-prev:focus { outline: none; }
+.owl-carousel .owl-next span {
+  display: inline-block;
+  padding: 5px 25px;
+  border-radius: 50%;
+  font-size: 40px;
+}
+.owl-carousel .owl-next:focus { outline: none; }

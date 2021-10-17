@@ -1,33 +1,33 @@
-.card {
+.auib-card {
   border-radius: 0 !important;
   border: none;
-  padding: 5px;
-  background-color: #f8f9fa !important;
-  color: #343a40 !important;
+  padding: 25px;
+  background-color: #ae1836f8 !important;
+  color: #ffffff !important;
   transition: all 0.5s ease 0s;
   opacity: 0.9;
 }
-.card:hover {
+.auib-card:hover {
   opacity: 1;
 
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
 }
-.card-img {
+.auib-card-img {
   border-radius: 0 !important;
 }
-.card-title {
+.auib-card-title {
   text-align: center;
   margin: 1rem !important;
 }
-.card-set{
+.auib-card-set{
   padding: 4rem!important;
 }
-.card-set .row img {
+.auib-card-set .row img {
   height: 350px;
   object-fit: cover;
   /* width: inherit; */
 }
 
-.card-title {
+.auib-card-title {
   font-size: 16pt;
 }

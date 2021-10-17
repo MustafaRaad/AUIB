@@ -1,21 +1,16 @@
 .first-slide_margin {
-  margin-top: 20vh;
+  margin-top: 0vh;
 }
 .hero-section {
   align-items: center;
   justify-content: center;
-  height: 75vh;
+  height: 85vh;
   background-image: url("../../img/about/hero-section.jpeg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   transition: 1.2s;
-  width: 50%;
-  margin: auto;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.hero-section:hover {
-  width: 100%;
 }
 .hero-section_div {
   width: 100%;
@@ -27,11 +22,6 @@
   align-content: center;
   justify-content: space-evenly;
   align-items: center;
-  opacity: 0;
-  font-size: 1vh;
-  font-weight: 600;
-}
-.hero-section_div:hover {
   background: rgba(174, 24, 54, 0.3);
   background: -webkit-linear-gradient(
     to bottom,
@@ -43,8 +33,6 @@
     rgba(174, 24, 54, 0.3),
     rgba(36, 11, 54, 0.3)
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  opacity: 1;
-  font-size: 3.5vh;
 }
 .hero-section_div a:hover {
   border: 1px solid #fff;
@@ -60,7 +48,7 @@
 
 .content-section {
   /* box-shadow: 0px 0px 10px #ccc; */
-  margin: 100px 0;
+  /* margin: 100px 0; */
   /* font-size: calc(100% + 10px); */
   display: flex;
   flex-direction: column;

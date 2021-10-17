@@ -1,660 +1,891 @@
 <!DOCTYPE html>
 <html lang="en" class="no-js">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
 
-<head>
-  <!-- Required meta tags -->
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+      integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/home/bg.css" />
+    <link rel="stylesheet" href="assets/css/cover.css" />
+    <link rel="stylesheet" href="assets/css/features.css" />
+    <link rel="stylesheet" href="assets/css/navbar.css" />
+    <link rel="stylesheet" href="assets/css/scroll/reset.css" />
 
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
-    integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous" />
-  <link rel="stylesheet" href="assets/css/main.css" />
-  <link rel="stylesheet" href="assets/css/cover.css" />
-  <link rel="stylesheet" href="assets/css/features.css" />
-  <link rel="stylesheet" href="assets/css/navbar.css" />
-  <link rel="stylesheet" href="assets/css/scroll/reset.css" />
+    <!-- CSS reset -->
+    <link rel="stylesheet" href="assets/css/new-nav.css" />
+    <link rel="stylesheet" href="assets/css/landing.css" />
+    <link rel="stylesheet" href="assets/css/news-cards.css" />
+    <link rel="stylesheet" href="assets/css/counter.css" />
+    <link rel="stylesheet" href="assets/css/cards.css" />
+    <link rel="stylesheet" href="assets/css/accordion.css" />
+    <link rel="stylesheet" href="assets/css/accreditations.css" />
 
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css"
+    />
+    <!-- Carasoul -->
+    <script src="./assets/js/glide.min.js"></script>
+    <!-- animation on scroll -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
-  <!-- CSS reset -->
-  <link rel="stylesheet" href="assets/css/scroll/style.css" />
-  <link rel="stylesheet" href="assets/css/new-nav.css" />
-  <link rel="stylesheet" href="assets/css/landing.css" />
-  <link rel="stylesheet" href="assets/css/news-cards.css" />
-  <link rel="stylesheet" href="assets/css/counter.css" />
-  <link rel="stylesheet" href="assets/css/cards.css" />
-  <link rel="stylesheet" href="assets/css/accordion.css" />
-  <!-- Resource style -->
-  <script src="assets/js/scroll/modernizr.js"></script>
+    <title>AUIB</title>
+    <style>
+      .move_out {
+        opacity: 0;
+        transition: all 2s ease-in-out;
+      }
 
-  <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+      .move_in {
+        opacity: 1;
+        transition: all 2s ease-in-out;
+      }
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
-  <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css" />
+      *:not(i) {
+        font-family: "ubuntu" !important;
+      }
+    </style>
+  </head>
 
-  <!-- Modernizr -->
-  <title>AUIB</title>
-  <style>
-    .move_out{
-      opacity: 0;
-      transition: all 2s ease-in-out;
-    }
+  <!-- <body data-hijacking="on" data-animation="parallax"> -->
 
-    .move_in {
-      opacity: 1;
-      transition: all 2s ease-in-out;
-    }
-
-    *:not(i){
-    font-family: 'ubuntu' !important;
-}
-  </style>
-</head>
-
-<!-- <body data-hijacking="on" data-animation="parallax"> -->
-
-<body data-hijacking="on" data-animation="parallax">
-  <header class="head-main">
-    <div class="navbar navbar-dark box-shadow">
-      <div class="container-fluid d-flex justify-content-between p-1 w-100">
-        <div class="col-3 left">
-          <div class="auib-text">
-            <a href="index.html">
-              <img src="assets/img/auib-ar2.png" alt="" class="logo" />
-            </a>
-          </div>
+  <body>
+    <header
+      class="
+        container-fluid
+        navbar navbar-light
+        w-100
+        justify-content-center
+        text-center
+        fixed-top
+      "
+      style="z-index: 520"
+    >
+      <div class="row w-100">
+        <div class="col-3 auib-text">
+          <a href="index.html">
+            <img src="assets/img/auib-en1.png" alt="" class="logo" />
+          </a>
         </div>
-        <div class="col-6 w-100 d-none d-md-none d-lg-block">
-          <div class="row w-100 p-0" style="place-content: center">
-            <ul class="d-flex justify-content-center border-bottom w-100">
-              <li>
-                <a class="nav-link mx-1 text-light" style="font-weight: 700" href="index.html">Home</a>
-              </li>
-              <li>
-                <a class="nav-link mx-1 text-light" style="font-weight: 700" href="pages/about.html">About</a>
-              </li>
-              <li>
-                <a class="nav-link mx-1 text-light" style="font-weight: 700" href="pages/admissions.html">Admissions</a>
-              </li>
-              <li>
-                <a class="nav-link mx-1 text-light" style="font-weight: 700" href="pages/academics.html">Academics</a>
-              </li>
-              <li>
-                <a class="nav-link mx-1 text-light" style="font-weight: 700" href="pages/student-life.html">Student
-                  Life</a>
-              </li>
-            </ul>
-            <ul class="d-flex justify-content-center w-100">
-              <li>
-                <a class="nav-link mx-1 text-light" style="font-size: 0.9rem" href="pages/faculty.html">Faculty</a>
-              </li>
-              <li>
-                <a class="nav-link mx-1 text-light" style="font-size: 0.9rem" href="pages/students.html">Students</a>
-              </li>
-              <li>
-                <a class="nav-link mx-1 text-light" style="font-size: 0.9rem" href="pages/staff.html">Staff</a>
-              </li>
-              <li>
-                <a class="nav-link mx-1 text-light" style="font-size: 0.9rem" href="#">
-                  <i class="fas fa-search"></i>
-                </a>
-              </li>
-            </ul>
+        <div class="col-9">
+          <div class="w-100">
+            <div
+              class="container-fluid d-flex justify-content-between p-1 w-100"
+            >
+              <div class="w-100 d-none d-md-none d-lg-block">
+                <div class="mr-auto row w-100" style="place-content: end">
+                  <ul class="d-flex justify-content-end w-100">
+                    <li>
+                      <a
+                        class="nav-link mx-1 text-muted"
+                        style="font-size: 0.7rem"
+                        href="pages/faculty.html"
+                        >Faculty</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="nav-link mx-1 text-muted"
+                        style="font-size: 0.7rem"
+                        href="pages/students.html"
+                        >Students</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="nav-link mx-1 text-muted"
+                        style="font-size: 0.7rem"
+                        href="pages/staff.html"
+                        >Staff</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="nav-link mx-1 text-muted"
+                        style="font-size: 0.7rem"
+                        href="#"
+                      >
+                        <i class="fas fa-search"></i>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="row w-100 justify-content-between">
+                <div class="">
+                  <div class="row p-0">
+                    <ul class="d-flex">
+                      <li>
+                        <a
+                          class="nav-link mx-1 text-dark"
+                          style="font-weight: 700"
+                          href="index.html"
+                          >Home</a
+                        >
+                      </li>
+
+                      <li>
+                        <a
+                          class="nav-link mx-1 text-dark"
+                          style="font-weight: 700"
+                          href="pages/admissions.html"
+                          >Admissions</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="nav-link mx-1 text-dark"
+                          style="font-weight: 700"
+                          href="pages/academics.html"
+                          >Academics</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="nav-link mx-1 text-dark"
+                          style="font-weight: 700"
+                          href="pages/student-life.html"
+                          >Student Life</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="nav-link mx-1 text-dark"
+                          style="font-weight: 700"
+                          href="pages/about.html"
+                          >About</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-2 right d-flex justify-content-end flex-end">
+                  <a class="nav-button text-muted" style="cursor: pointer"
+                    ><span id="nav-icon3"
+                      ><span></span><span></span><span></span><span></span
+                    ></span>
+                    <span class="align-self-center ml-3">MENU</span></a
+                  >
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="col-2 right d-flex justify-content-end flex-end">
-          <a class="nav-button text-light" style="cursor: pointer"><span
-              id="nav-icon3"><span></span><span></span><span></span><span></span></span>
-            <span class="align-self-center ml-3">MENU</span></a>
         </div>
       </div>
-    </div>
-    <!--navbar end-->
+      <!--navbar end-->
 
-    <div class="fixed-top main-menu" style="overflow: auto">
-      <div class="d-flex" style="margin-top: 6rem;flex-wrap: wrap;justify-content: space-around;">      
-            <div class="col-md-4 col-sm-12 col-xs-12">
-              <ul class="nav">
-                <li class="nav-item delay-1">
-                  <a class="nav-link main-link"  
-                   style="margin:10px;background-image: url('assets/img/menu_icons/2/About\ the\ university-\ حول\ الجامعة.png');
-                  background-size: contain !important;
-                   background-repeat: no-repeat !important;
-                   background-position: right !important;" href="pages/about.html">
-                    <i class="fas fa-info-circle"></i> About</a>
-                </li>
-                <li class="nav-item delay-1">
-                  <a class="nav-link" href="pages/about/#">Our Mission</a>
-                </li>
-                <li class="nav-item delay-5">
-                  <a class="nav-link" href="pages/about/#">AUIB</a>
-                </li>
-                <li class="nav-item delay-6">
-                  <a class="nav-link" href="pages/about/#">What is an American Education?</a>
-                </li>
-                <li class="nav-item delay-7">
-                  <a class="nav-link" href="pages/about/#">Accredation and Affilation</a>
-                </li>
-                <li class="nav-item delay-8">
-                  <a class="nav-link" href="pages/about/#">Management</a>
-                </li>
-                <li class="nav-item delay-9">
-                  <a class="nav-link" href="pages/about/#">About Education in Baghdad</a>
-                </li>
-              </ul>
-            </div>
-            <div class="col-md-4 col-sm-12 col-xs-12">
-              <ul class="nav">
-                <li class="nav-item delay-1">
-                  <a class="nav-link main-link" href="pages/admissions.html" 
-                  style="margin:10px;background-image: url('assets/img/menu_icons/2/التسجيل-\ Registration.png');
-                   background-size: contain !important;
+      <div class="fixed-top main-menu" style="overflow: auto">
+        <div
+          class="d-flex"
+          style="
+            margin-top: 6rem;
+            flex-wrap: wrap;
+            justify-content: space-around;
+          "
+        >
+          <div class="col-md-4 col-sm-12 col-xs-12">
+            <ul class="nav">
+              <li class="nav-item delay-1">
+                <a
+                  class="nav-link main-link"
+                  style="
+                    margin: 10px;
+                    background-image: url('assets/img/menu_icons/2/About\ the\ university-\ حول\ الجامعة.png');
+                    background-size: contain !important;
                     background-repeat: no-repeat !important;
-                    background-position: right !important;"> 
-                    Admissions</a>
-                </li>
-                <li class="nav-item delay-2">
-                  <a class="nav-link" href="pages/admissions/#" >Apply</a>
-                </li>
-                <li class="nav-item delay-3">
-                  <a class="nav-link" href="pages/admissions/#">Undergraduate Requirement</a>
-                </li>
-                <li class="nav-item delay-4">
-                  <a class="nav-link" href="pages/admissions/#">Tution and Fees</a>
-                </li>
-                <li class="nav-item delay-5">
-                  <a class="nav-link" href="pages/admissions/#">Financial Aid and Scholarships</a>
-                </li>
-                <li class="nav-item delay-6">
-                  <a class="nav-link" href="pages/admissions/#">Summer Programs</a>
-                </li>
-              </ul>
-            </div>
-            <div class="col-md-4 col-sm-12 col-xs-12">
-              <ul class="nav">
-                <li class="nav-item delay-1">
-                  <a class="nav-link main-link" href="pages/academics.html" 
-                  style="margin:10px;background-image: url('assets/img/menu_icons/2/البرامج\ الاكاديمية-\ Acedamic\ Programs.png');
-                  background-size: contain !important;
-                   background-repeat: no-repeat !important;
-                   background-position: right !important;">Academics</a>
-                </li>
-                <li class="nav-item delay-2">
-                  <a class="nav-link" href="pages/academics/#">Colleges</a>
-                </li>
-                <li class="nav-item delay-3">
-                  <a class="nav-link" href="pages/academics/#">Programs</a>
-                </li>
-                <li class="nav-item delay-4">
-                  <a class="nav-link" href="pages/academics/#">Centers</a>
-                </li>
-                <li class="nav-item delay-5">
-                  <a class="nav-link" href="pages/academics/#">University Calendar</a>
-                </li>
-              </ul>
-            </div>
-            <div class="col-md-4 col-sm-12 col-xs-12">
-              <ul class="nav">
-                <li class="nav-item delay-1">
-                  <a class="nav-link main-link" href="pages/student-life.html"
-                  style="margin:10px;background-image: url('assets/img/menu_icons/2/students\ life-حياة\ الطلبة.png');
-                  background-size: contain !important;
-                   background-repeat: no-repeat !important;
-                   background-position: right !important;">Student Life</a>
-                </li>
-                <li class="nav-item delay-2">
-                  <a class="nav-link" href="pages/student-life/#">Campus Life</a>
-                </li>
-                <li class="nav-item delay-3">
-                  <a class="nav-link" href="pages/student-life/#">Student Area and Activities</a>
-                </li>
-                <li class="nav-item delay-4">
-                  <a class="nav-link" href="pages/student-life/#">After Graduation</a>
-                </li>
-                <li class="nav-item delay-5">
-                  <a class="nav-link" href="pages/student-life/#">Safety and Security</a>
-                </li>
-                <li class="nav-item delay-6">
-                  <a class="nav-link" href="pages/student-life/#">Information Technology</a>
-                </li>
-                <li class="nav-item delay-7">
-                  <a class="nav-link" href="pages/student-life/#">Accessibility Services</a>
-                </li>
-              </ul>
-            </div>
-            <div class="col-md-4 col-sm-12 col-xs-12">
-              <ul class="nav">
-                <li class="nav-item delay-1">
-                  <a class="nav-link main-link" href="pages/students.html"
-                  style="background-image: url('assets/img/menu_icons/2/Visual\ library-المكتبة\ المرئية.png');
-                  background-size: contain !important;
-                   background-repeat: no-repeat !important;
-                   background-position: right !important;">Media Library</a>
-                </li>
-                <li class="nav-item delay-2">
-                  <a class="nav-link" href="pages/students.html">Campus News</a>
-                </li>
-                <li class="nav-item delay-3">
-                  <a class="nav-link" href="pages/students.html">Events</a>
-                </li>
-                <li class="nav-item delay-4">
-                  <a class="nav-link" href="pages/students.html">Photo Gallery</a>
-                </li>
-                <li class="nav-item delay-5">
-                  <a class="nav-link" href="pages/students.html">Video Gallery</a>
-                </li>
-                <li class="nav-item delay-6">
-                  <a class="nav-link" href="pages/students.html">Newsletter</a>
-                </li>
-              </ul>
-            </div>     
-      </div>
-    </div>
-  </header>
-
-
-  <!-- ---------------------------- -->
-  <section class="cd-section visible">
-    <div>
-      <div class="container-fluid section-slide vid-fg" style="justify-content: center">
-        <div class="text-effect animated">
-          <h1>Your Future</h1>
-          <h1>Secured</h1>
+                    background-position: right !important;
+                  "
+                  href="pages/about.html"
+                >
+                  About</a
+                >
+              </li>
+              <li class="nav-item delay-1">
+                <a class="nav-link" href="pages/about/#">Our Mission</a>
+              </li>
+              <li class="nav-item delay-5">
+                <a class="nav-link" href="pages/about/#">AUIB</a>
+              </li>
+              <li class="nav-item delay-6">
+                <a class="nav-link" href="pages/about/#"
+                  >What is an American Education?</a
+                >
+              </li>
+              <li class="nav-item delay-7">
+                <a class="nav-link" href="pages/about/#"
+                  >Accredation and Affilation</a
+                >
+              </li>
+              <li class="nav-item delay-8">
+                <a class="nav-link" href="pages/about/#">Management</a>
+              </li>
+              <li class="nav-item delay-9">
+                <a class="nav-link" href="pages/about/#"
+                  >About Education in Baghdad</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-4 col-sm-12 col-xs-12">
+            <ul class="nav">
+              <li class="nav-item delay-1">
+                <a
+                  class="nav-link main-link"
+                  href="pages/admissions.html"
+                  style="
+                    margin: 10px;
+                    background-image: url('assets/img/menu_icons/2/التسجيل-\ Registration.png');
+                    background-size: contain !important;
+                    background-repeat: no-repeat !important;
+                    background-position: right !important;
+                  "
+                >
+                  Admissions</a
+                >
+              </li>
+              <li class="nav-item delay-2">
+                <a class="nav-link" href="pages/admissions/#">Apply</a>
+              </li>
+              <li class="nav-item delay-3">
+                <a class="nav-link" href="pages/admissions/#"
+                  >Undergraduate Requirement</a
+                >
+              </li>
+              <li class="nav-item delay-4">
+                <a class="nav-link" href="pages/admissions/#"
+                  >Tution and Fees</a
+                >
+              </li>
+              <li class="nav-item delay-5">
+                <a class="nav-link" href="pages/admissions/#"
+                  >Financial Aid and Scholarships</a
+                >
+              </li>
+              <li class="nav-item delay-6">
+                <a class="nav-link" href="pages/admissions/#"
+                  >Summer Programs</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-4 col-sm-12 col-xs-12">
+            <ul class="nav">
+              <li class="nav-item delay-1">
+                <a
+                  class="nav-link main-link"
+                  href="pages/academics.html"
+                  style="
+                    margin: 10px;
+                    background-image: url('assets/img/menu_icons/2/البرامج\ الاكاديمية-\ Acedamic\ Programs.png');
+                    background-size: contain !important;
+                    background-repeat: no-repeat !important;
+                    background-position: right !important;
+                  "
+                  >Academics</a
+                >
+              </li>
+              <li class="nav-item delay-2">
+                <a class="nav-link" href="pages/academics/#">Colleges</a>
+              </li>
+              <li class="nav-item delay-3">
+                <a class="nav-link" href="pages/academics/#">Programs</a>
+              </li>
+              <li class="nav-item delay-4">
+                <a class="nav-link" href="pages/academics/#">Centers</a>
+              </li>
+              <li class="nav-item delay-5">
+                <a class="nav-link" href="pages/academics/#"
+                  >University Calendar</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-4 col-sm-12 col-xs-12">
+            <ul class="nav">
+              <li class="nav-item delay-1">
+                <a
+                  class="nav-link main-link"
+                  href="pages/student-life.html"
+                  style="
+                    margin: 10px;
+                    background-image: url('assets/img/menu_icons/2/students\ life-حياة\ الطلبة.png');
+                    background-size: contain !important;
+                    background-repeat: no-repeat !important;
+                    background-position: right !important;
+                  "
+                  >Student Life</a
+                >
+              </li>
+              <li class="nav-item delay-2">
+                <a class="nav-link" href="pages/student-life/#">Campus Life</a>
+              </li>
+              <li class="nav-item delay-3">
+                <a class="nav-link" href="pages/student-life/#"
+                  >Student Area and Activities</a
+                >
+              </li>
+              <li class="nav-item delay-4">
+                <a class="nav-link" href="pages/student-life/#"
+                  >After Graduation</a
+                >
+              </li>
+              <li class="nav-item delay-5">
+                <a class="nav-link" href="pages/student-life/#"
+                  >Safety and Security</a
+                >
+              </li>
+              <li class="nav-item delay-6">
+                <a class="nav-link" href="pages/student-life/#"
+                  >Information Technology</a
+                >
+              </li>
+              <li class="nav-item delay-7">
+                <a class="nav-link" href="pages/student-life/#"
+                  >Accessibility Services</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-4 col-sm-12 col-xs-12">
+            <ul class="nav">
+              <li class="nav-item delay-1">
+                <a
+                  class="nav-link main-link"
+                  href="pages/students.html"
+                  style="
+                    background-image: url('assets/img/menu_icons/2/Visual\ library-المكتبة\ المرئية.png');
+                    background-size: contain !important;
+                    background-repeat: no-repeat !important;
+                    background-position: right !important;
+                  "
+                  >Media Library</a
+                >
+              </li>
+              <li class="nav-item delay-2">
+                <a class="nav-link" href="pages/students.html">Campus News</a>
+              </li>
+              <li class="nav-item delay-3">
+                <a class="nav-link" href="pages/students.html">Events</a>
+              </li>
+              <li class="nav-item delay-4">
+                <a class="nav-link" href="pages/students.html">Photo Gallery</a>
+              </li>
+              <li class="nav-item delay-5">
+                <a class="nav-link" href="pages/students.html">Video Gallery</a>
+              </li>
+              <li class="nav-item delay-6">
+                <a class="nav-link" href="pages/students.html">Newsletter</a>
+              </li>
+            </ul>
+          </div>
         </div>
-        <!-- <h1 class="title-lg">Your</h1>
-          <h1 class="title-lg">Future Secured</h1> -->
-        <a class="btn btn-lg" href="#">
-          <span>Apply Now</span>
-        </a>
       </div>
-      <ul class="d-flex p-3 quick-nav">
-        <li>
-          <a class="nav-link mx-4" href="#">Scholarships</a>
-        </li>
-        <li>
-          <a class="nav-link mx-4" href="#">Calendar</a>
-        </li>
-        <li>
-          <a class="nav-link mx-4" href="#">Fees</a>
-        </li>
-        <li><a class="nav-link mx-4" href="#">Programs</a></li>
-      </ul>
-      <video autoplay muted loop width="100%" height="100%">
-        <source src="assets/img/home/auib.mp4" type="video/mp4" />
-      </video>
-    </div>
-  </section>
+    </header>
 
-  <section class="cd-section">
-    <div>
-      <div class="container-fluid section-slide">
-        <div class="row">
-          <div class="col-6"></div>
-          <div class="col-6 section-card">
-            <h1 class="main-txt-auib">AUIB's Story</h1>
+    <!-- ---------------------------- -->
+    <section style="height: 100vh; width: 100%">
+      <div
+        class="container h-100 w-100"
+        style="display: grid; align-items: center"
+      >
+        <div class="row auib-card align-items-center justify-content-center">
+          <div class="col-12">
+            <h1 class="h2">Your Future Secured</h1>
+          </div>
+          <div class="col-12">
+            <button class="btn">Apply now</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  
+
+    <section class="section-card">
+      <div
+        class="container my-2"
+        data-aos="fade-up"
+        data-aos-anchor-placement="center-bottom"
+      >
+        <div class="row py-5 justify-content-center">
+          <div class="col-6">
+            <h1 class="h1 main-txt-auib">Why AUIB?</h1>
             <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-              Tenetur optio molestias atque hic dolores dolorum, amet unde. Ex
-              ducimus accusantium obcaecati quis, architecto temporibus
-              mollitia illum magni, et fuga unde! Lorem ipsum dolor sit, amet
-              consectetur adipisicing elit. Tenetur optio molestias atque hic
-              mollitia illum magni, et fuga unde!
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur
+              optio molestias atque hic dolores dolorum, amet unde. Ex ducimus
+              accusantium obcaecati quis, architecto temporibus mollitia illum
+              magni, et fuga unde! Lorem ipsum dolor sit, amet consectetur
+              adipisicing elit. Tenetur optio molestias atque hic dolores
+              dolorum, amet unde. Ex ducimus accusantium obcaecati quis,
+              architecto temporibus mollitia illum magni, et fuga unde!
+            </p>
+          </div>
+          <div class="col-6">
+            <img
+              src="./assets/img/home/why.jpg"
+              style="width: inherit"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="container my-2"
+        data-aos="fade-up"
+        data-aos-anchor-placement="center-bottom"
+      >
+        <div class="row py-5 justify-content-center">
+          <div class="col-6">
+            <img
+              src="./assets/img/home/story.jpg"
+              style="width: inherit"
+              alt=""
+            />
+          </div>
+          <div class="col-6">
+            <h1 class="h1 main-txt-auib">AUIB story</h1>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur
+              optio molestias atque hic dolores dolorum, amet unde. Ex ducimus
+              accusantium obcaecati quis, architecto temporibus mollitia illum
+              magni, et fuga unde! Lorem ipsum dolor sit, amet consectetur
+              adipisicing elit. Tenetur optio molestias atque hic dolores
+              dolorum, amet unde. Ex ducimus accusantium obcaecati quis,
+              architecto temporibus mollitia illum magni, et fuga unde!
             </p>
           </div>
         </div>
       </div>
-    </div>
-  </section>
 
-  <section class="cd-section">
-    <div>
-      <div class="container-fluid section-slide">
-        <div class="row">
-          <div class="col-6 section-card">
-            <h1 class="main-txt-auib">Why AUIB?</h1>
+      <div
+        class="container my-2"
+        data-aos="fade-up"
+        data-aos-anchor-placement="center-bottom"
+      >
+        <div class="row py-5 justify-content-center">
+          <div class="col-6">
+            <h1 class="h1 main-txt-auib">Study at AUIB</h1>
             <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-              Tenetur optio molestias atque hic dolores dolorum, amet unde. Ex
-              ducimus accusantium obcaecati quis, architecto temporibus
-              mollitia illum magni, et fuga unde! Lorem ipsum dolor sit, amet
-              consectetur adipisicing elit. Tenetur optio molestias atque hic
-              dolores dolorum, amet unde. Ex ducimus accusantium obcaecati
-              quis, architecto temporibus mollitia illum magni, et fuga unde!
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur
+              optio molestias atque hic dolores dolorum, amet unde. Ex ducimus
+              accusantium obcaecati quis, architecto temporibus mollitia illum
+              magni, et fuga unde! Lorem ipsum dolor sit, amet consectetur
+              adipisicing elit. Tenetur optio molestias atque hic dolores
+              dolorum, amet unde. Ex ducimus accusantium obcaecati quis,
+              architecto temporibus mollitia illum magni, et fuga unde!
             </p>
+          </div>
+          <div class="col-6">
+            <img
+              src="./assets/img/home/study.jpg"
+              style="width: inherit"
+              alt=""
+            />
           </div>
         </div>
       </div>
-    </div>
-  </section>
-
-  <section class="cd-section">
-    <div>
-      <div class="container-fluid section-slide">
-        <div class="row">
-          <div class="col-6"></div>
-          <div class="col-6 section-card">
-            <h1 class="main-txt-auib">Study at AUIB</h1>
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-              Tenetur optio molestias atque hic dolores dolorum, amet unde. Ex
-              ducimus accusantium obcaecati quis, architecto temporibus
-              mollitia illum magni, et fuga unde! Lorem ipsum dolor sit, amet
-              consectetur adipisicing elit. Tenetur optio molestias atque hic
-              dolores dolorum, amet unde. Ex ducimus accusantium obcaecati
-              mollitia illum magni, et fuga unde!
-            </p>
+    </section>
+      <section class="bg-white">
+      <div class="container p-5">
+        <div class="row" style="overflow: inherit;">
+          <h1>Accreditations</h1>
+          <div class="col-md-12">
+            <div class="m-auto">
+              <div
+                id="testimonial-slider"
+                class="slider owl-carousel text-center"
+                style="display: flex"
+              >
+                <div class="testimonial">
+                  <div class="testimonial-review">
+                    <div class="pic">
+                      <img
+                        src="./assets/img/auib-ar1.png"
+                        alt=""
+                        style="display: initial; width: 150px"
+                      />
+                    </div>
+                  </div>
+                  <p class="description">
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Sed lobortis odio ac eros sollicitudin consequat. Proin a
+                    tortor tortor. Nullam consequat dictum metus in vulputate.
+                    Pellentesque congue lectus justo, et."
+                  </p>
+                </div>
+                <div class="testimonial">
+                  <div class="testimonial-review">
+                    <div class="pic">
+                      <img
+                        src="./assets/img/auib-ar1.png"
+                        alt=""
+                        style="display: initial; width: 150px"
+                      />
+                    </div>
+                  </div>
+                  <p class="description">
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Sed lobortis odio ac eros sollicitudin consequat. Proin a
+                    tortor tortor. Nullam consequat dictum metus in vulputate.
+                    Pellentesque congue lectus justo, et."
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="cd-section">
-    <div>
+    <section data-aos="fade-left">
       <div class="container_accordion">
         <div class="card_accordion">
           <img src="assets/img/home/admissions.jpeg" />
-          <div class="card__head_accordion" style="font-size:18px !important;font-weight: 800">
-            <p> Student Affairs</p>
+          <div class="card__head_accordion">
+            <h5 class="h5">Student Affairs</h5>
 
-            <div class="hint2" style="display:none;font-size: 14px !important;width:10% !important;margin-top:5%">
-              <br>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              Explicabo nisi fuga alias amet dolorem aliquam accusantium
-              delectus consequatur, blanditiis similique deleniti. Cupiditate
-              ducimus est perferendis tempora totam dolores quibusdam dicta.
+            <div
+              class="hint2"
+              style="display: none; width: 10% !important; margin-top: 5%"
+            >
+              <br />
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Explicabo nisi fuga alias amet dolorem aliquam accusantium
+                delectus consequatur, blanditiis similique deleniti. Cupiditate
+                ducimus est perferendis tempora totam dolores quibusdam dicta.
+              </p>
             </div>
           </div>
         </div>
         <div class="card_accordion">
-          <img src="assets/img/home/it-serv.jpg" />
-          <div class="card__head_accordion" style="font-size:18px !important;font-weight: 800">
-            <p>IT Services</p>
-
-            <div class="hint2" style="display:none;font-size: 14px !important;width:10% !important;margin-top:5%">
-              <br>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              Explicabo nisi fuga alias amet dolorem aliquam accusantium
-              delectus consequatur, blanditiis similique deleniti. Cupiditate
-              ducimus est perferendis tempora totam dolores quibusdam dicta.
-            </div>
-          </div>
-        </div>
-        <div class="card_accordion" >
           <img src="assets/img/home/library.jpeg" />
-          <div class="card__head_accordion" style="font-size:18px !important;font-weight: 800">
-            <p>Library</p>
+          <div class="card__head_accordion">
+            <h5 class="h5">Library</h5>
 
-            <div class="hint2" style="display:none;font-size: 14px !important;width:10% !important;margin-top:5%">
-              <br>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              Explicabo nisi fuga alias amet dolorem aliquam accusantium
-              delectus consequatur, blanditiis similique deleniti. Cupiditate
-              ducimus est perferendis tempora totam dolores quibusdam dicta.
+            <div
+              class="hint2"
+              style="display: none; width: 10% !important; margin-top: 5%"
+            >
+              <br />
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Explicabo nisi fuga alias amet dolorem aliquam accusantium
+                delectus consequatur, blanditiis similique deleniti. Cupiditate
+                ducimus est perferendis tempora totam dolores quibusdam dicta.
+              </p>
             </div>
           </div>
         </div>
         <div class="card_accordion">
           <img src="assets/img/home/ela.jpeg" />
-          <div class="card__head_accordion" style="font-size:18px !important;font-weight: 800">
-            <p>ELA</p>
+          <div class="card__head_accordion">
+            <h5 class="h5">ELA</h5>
 
-            <div class="hint2" style="display:none;font-size: 14px !important;width:10% !important;margin-top:5%">
+            <div
+              class="hint2"
+              style="display: none; width: 10% !important; margin-top: 5%"
+            >
               <br />
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              Explicabo nisi fuga alias amet dolorem aliquam accusantium
-              delectus consequatur, blanditiis similique deleniti. Cupiditate
-              ducimus est perferendis tempora totam dolores quibusdam dicta.
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Explicabo nisi fuga alias amet dolorem aliquam accusantium
+                delectus consequatur, blanditiis similique deleniti. Cupiditate
+                ducimus est perferendis tempora totam dolores quibusdam dicta.
+              </p>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="cd-section">
-    <div>
-      <div class="container-fluid section-slide">
-        <div class="row">
-          <!-- <h4 style="text-align: center" class="col-12">Statistics</h4> -->
-          <div class="col-md-2 my-3"></div>
-          <div class="col-md-3 col-sm-6 my-3">
+    <section class="main-bg-auib">
+      <div class="container py-5" data-aos="zoom-in">
+        <div class="row py-5">
+          <div class="col-md-3 col-sm-6">
             <div class="counter">
-              <h3>Programs</h3>
-              <span class="counter-value">20</span>
               <div class="counter-icon">
                 <i class="fa fa-globe"></i>
               </div>
-            </div>
-          </div>
-          <div class="col-md-2 my-3"></div>
-          <div class="col-md-3 col-sm-6 my-3">
-            <div class="counter blue">
-              <h3>Specializations</h3>
-              <span class="counter-value">23</span>
-              <div class="counter-icon">
-                <i class="fas fa-user-graduate"></i>
+              <div class="counter-content">
+                <span class="counter-value">20</span>
+                <h3>Programs</h3>
               </div>
             </div>
           </div>
-          <div class="col-md-1 my-3"></div>
-          <div class="col-md-2 my-3"></div>
-          <div class="col-md-3 col-sm-6 my-3">
-            <div class="counter purple">
-              <h3>Student-Teacher ratio</h3>
-              <span class="counter-value">23:1</span>
+          <div class="col-md-3 col-sm-6">
+            <div class="counter">
               <div class="counter-icon">
                 <i class="fas fa-chalkboard-teacher"></i>
               </div>
+              <div class="counter-content">
+                <span class="counter-value">23:1</span>
+                <h3>Student-Teacher ratio</h3>
+              </div>
             </div>
           </div>
-          <div class="col-md-2 my-3"></div>
-          <div class="col-md-3 col-sm-6 my-3">
-            <div class="counter yellow">
-              <h3>Scholerships</h3>
-              <span class="counter-value">23</span>
+          <div class="col-md-3 col-sm-6">
+            <div class="counter">
               <div class="counter-icon">
                 <i class="fas fa-university"></i>
+              </div>
+              <div class="counter-content">
+                <span class="counter-value">23</span>
+                <h3>Scholerships</h3>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="counter">
+              <div class="counter-icon">
+                <i class="fas fa-user-graduate"></i>
+              </div>
+              <div class="counter-content">
+                <span class="counter-value">23</span>
+                <h3>Specializations</h3>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="cd-section">
-    <div>
-      <div class="container-fluid section-slide">
-        <!-- <h4 style="text-align: center">News</h4> -->
-        <div class="slider owl-carousel col-10" style="align-self: center">
-          <div class="card">
-            <div class="img">
-              <img src="assets/img/home/study.jpg" alt="" />
+    <section style="height: 100vh">
+      <div class="container h-100">
+        <div class="row align-items-center m-5" style="overflow: inherit;">
+          <h1 class="h1 m-3">AUIB Latest News</h1>
+          <div class="slider owl-carousel owl-theme">
+            <div class="card">
+              <div class="img">
+                <img src="assets/img/home/study.jpg" alt="" />
+              </div>
+              <div class="content">
+                <div class="title">News</div>
+                <span>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit
+                  modi dolorem quis quae animi nihil minus sed unde voluptas
+                  cumque.
+                </span>
+                <a class="btn" href="#">
+                  <span>Read more</span>
+                </a>
+              </div>
             </div>
-            <div class="content">
-              <div class="title">Briana Tozour</div>
-              <span>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit
-                modi dolorem quis quae animi nihil minus sed unde voluptas
-                cumque.
-              </span>
-              <a class="btn" href="#">
-                <span>Read more</span>
-              </a>
+            <div class="card">
+              <div class="img">
+                <img src="assets/img/home/story.jpg" alt="" />
+              </div>
+              <div class="content">
+                <div class="title">News</div>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit
+                  modi dolorem quis quae animi nihil minus sed unde voluptas
+                  cumque.
+                </p>
+                <a class="btn" href="#">
+                  <span>Read more</span>
+                </a>
+              </div>
             </div>
-          </div>
-          <div class="card">
-            <div class="img">
-              <img src="assets/img/home/story.jpg" alt="" />
-            </div>
-            <div class="content">
-              <div class="title">Pricilla Preez</div>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit
-                modi dolorem quis quae animi nihil minus sed unde voluptas
-                cumque.
-              </p>
-              <a class="btn" href="#">
-                <span>Read more</span>
-              </a>
-            </div>
-          </div>
-          <div class="card">
-            <div class="img">
-              <img src="assets/img/home/why.jpg" alt="" />
-            </div>
+            <div class="card">
+              <div class="img">
+                <img src="assets/img/home/why.jpg" alt="" />
+              </div>
 
-            <div class="content">
-              <div class="title">Eliana Maia</div>
-              <span>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit
-                modi dolorem quis quae animi nihil minus sed unde voluptas
-                cumque.
-              </span>
-              <a class="btn" href="#">
-                <span>Read more</span>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="cd-section">
-    <div>
-      <div class="d-flex flex-column-reverse footer-section">
-        <div class="d-footer main-bg-auib d-flex justify-content-between" style="align-items: center">
-          <div class="col-12" style="align-self: center; align-items: center">
-            <img src="/assets/img/logo-s.png" style="width: 3.5rem" alt="" />
-            <p class="m-1">
-              All Right Reserved AUIB American University Of Iraq Baghdad ©
-              2021
-            </p>
-          </div>
-        </div>
-        <div class="
-              m-footer
-              footer-bg
-              text-left
-              h-100
-              flex-end
-              justify-content-center
-            ">
-          <div class="row p-1 w-100" style="place-content: center">
-            <div class="col-3 mb-auto touch">
-              <p class="m-2">Get in Touch</p>
-              <ul class="navbar-nav m-auto">
-                <li class="nav-item">
-                  <i class="fas fa-phone-alt"></i>
-                  <span class="nav-link">6227</span>
-                </li>
-                <li class="nav-item">
-                  <i class="fas fa-map-marker-alt"></i>
-                  <span class="nav-link">Airport Road , Baghdad- Iraq</span>
-                </li>
-                <li class="nav-item">
-                  <i class="fas fa-envelope"></i>
-                  <span class="nav-link">info@auib.edu.iq</span>
-                </li>
-              </ul>
-            </div>
-            <div class="col-3 mb-auto">
-              <p class="m-2">Helpful Links</p>
-              <ul class="navbar-nav m-auto">
-                <li class="nav-item">
-                  <a class="nav-link" href="#">APPLY</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">UNDERGRADUATE</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">GRADUATE</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">CERTIFICATE</a>
-                </li>
-              </ul>
-            </div>
-            <div class="col-3 mb-auto">
-              <ul class="navbar-nav m-auto">
-                <p class="m-2">Get Our Updates</p>
-                <form>
-                  <div class="form-group d-flex">
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                      placeholder="Type your Email" />
-                    <button type="submit" class="btn col-3">
-                      <span>Submit</span>
-                    </button>
-                  </div>
-                </form>
-                <div class="w-100 d-flex" style="place-content: center">
-                  <a class="nav-link" href="#"><i class="fab fa-instagram"></i></a>
-                  <a class="nav-link" href="#"><i class="fab fa-facebook-square"></i></a>
-                  <a class="nav-link" href="#"><i class="fab fa-youtube"></i></a>
-                  <a class="nav-link" href="#"><i class="fab fa-twitter-square"></i></a>
-                </div>
-              </ul>
+              <div class="content">
+                <div class="title">News</div>
+                <span>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit
+                  modi dolorem quis quae animi nihil minus sed unde voluptas
+                  cumque.
+                </span>
+                <a class="btn" href="#">
+                  <span>Read more</span>
+                </a>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Optional JavaScript -->
-  <nav>
-    <ul class="cd-vertical-nav">
-      <li><a href="#0" class="cd-prev inactive">Next</a></li>
-      <li><a href="#0" class="cd-next">Prev</a></li>
-    </ul>
-  </nav>
-  <script>
-    $(".slider").owlCarousel({
-      loop: true,
-      items: 3,
-      autoplay: true,
-      autoplayTimeout: 3000, //2000ms = 2s;
-      autoplayHoverPause: true,
-      merge: true,
-      responsive: {
-        678: {
-          mergeFit: true,
-        },
-        1000: {
-          mergeFit: false,
-        },
-      },
-    });
-  </script>
-  <!-- <script src="assets/js/newsCards.js"></script> -->
-  <!-- .cd-vertical-nav -->
-  <script src="assets/js/scroll/velocity.min.js"></script>
-  <script src="assets/js/scroll/velocity.ui.min.js"></script>
-  <script src="assets/js/scroll/main.js"></script>
-  <!-- Resource jQuery -->
-  <script src="assets/js/sideNav.js"></script>
-  <script src="assets/js/app.js"></script>
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="assets/js/NavOnScroll.min.js"></script>
+    <section class="bg-dark">
+      <div class="container">
+        <div class="row py-4 justify-content-around">
+          <div>
+            <ul class="list-group list-group-flush">
+              <p class="mb-3 h5 text-white">Title</p>
+              <a class="list-group-item p-1 nav-link" href="#"
+                >Cras justo odio</a
+              >
+              <a
+                class="list-group-item p-1 nav-link"
+                href="#"
+                class="list-group-item p-1"
+                >Dapibus ac facilisis in</a
+              >
+              <a
+                class="list-group-item p-1 nav-link"
+                href="#"
+                class="list-group-item p-1"
+                >Morbi leo risus</a
+              >
+              <a
+                class="list-group-item p-1 nav-link"
+                href="#"
+                class="list-group-item p-1"
+                >Porta ac consectetur ac</a
+              >
+              <a
+                class="list-group-item p-1 nav-link"
+                href="#"
+                class="list-group-item p-1"
+                >Vestibulum at eros</a
+              >
+            </ul>
+          </div>
+          <div>
+            <ul class="list-group list-group-flush">
+              <p class="mb-3 h5 text-white">Title</p>
+              <a class="list-group-item p-1 nav-link" href="#"
+                >Cras justo odio</a
+              >
+              <a
+                class="list-group-item p-1 nav-link"
+                href="#"
+                class="list-group-item p-1"
+                >Dapibus ac facilisis in</a
+              >
+              <a
+                class="list-group-item p-1 nav-link"
+                href="#"
+                class="list-group-item p-1"
+                >Morbi leo risus</a
+              >
+              <a
+                class="list-group-item p-1 nav-link"
+                href="#"
+                class="list-group-item p-1"
+                >Porta ac consectetur ac</a
+              >
+              <a
+                class="list-group-item p-1 nav-link"
+                href="#"
+                class="list-group-item p-1"
+                >Vestibulum at eros</a
+              >
+            </ul>
+          </div>
+          <div>
+            <ul class="list-group list-group-flush">
+              <p class="mb-3 h5 text-white">Title</p>
+              <a class="list-group-item p-1 nav-link" href="#"
+                >Cras justo odio</a
+              >
+              <a class="list-group-item p-1 p-1 nav-link" href="#"
+                >Dapibus ac facilisis in</a
+              >
+              <a class="list-group-item p-1 nav-link" href="#"
+                >Morbi leo risus</a
+              >
+              <a class="list-group-item p-1 nav-link" href="#"
+                >Porta ac consectetur ac</a
+              >
+              <a class="list-group-item p-1 nav-link" href="#"
+                >Vestibulum at eros</a
+              >
+            </ul>
+          </div>
+        </div>
+        <div class="row p-1 justify-content-between text-white">
+          <p>
+            All Right Reserved AUIB American University Of Iraq Baghdad © 2021
+          </p>
+          <div class="d-flex text-white">
+            <a class="nav-link text-white" href="#"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a class="nav-link text-white" href="#"
+              ><i class="fab fa-facebook-square"></i
+            ></a>
+            <a class="nav-link text-white" href="#"
+              ><i class="fab fa-youtube"></i
+            ></a>
+            <a class="nav-link text-white" href="#"
+              ><i class="fab fa-twitter-square"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </section>
 
-  <!-- Intialize -->
-  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-    crossorigin="anonymous"></script>
-<script src="assets/js/accordion.js"></script>
-  
-</body>
-
+    <!-- Optional JavaScript -->
+    <script>
+      $(".slider").owlCarousel({
+        items: 1,
+        autoplay: true,
+        autoplaySpeed: 500,
+        dotsEach: true,
+        loop: true,
+      });
+    </script>
+    <script>
+      $(document).ready(function () {
+        $("#testimonial-slider").owlCarousel({
+          items: 3,
+          navigation: true,
+          navigationText: ["", ""],
+          autoPlay: false,
+        });
+      });
+    </script>
+    <!-- Resource jQuery -->
+    <script src="assets/js/sideNav.js"></script>
+    <script src="assets/js/app.js"></script>
+    <!-- Intialize -->
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+    <script src="assets/js/accordion.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
 </html>

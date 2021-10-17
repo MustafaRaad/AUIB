@@ -1,0 +1,14 @@
+section:nth-of-type(1){
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-image: url("../../img/home/front.png");
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-clip: content-box;
+  -webkit-animation: zoomin 8s ease-in infinite;
+  animation: zoomin 35s ease-in infinite;
+  overflow: hidden;
+}

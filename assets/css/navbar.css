@@ -1,6 +1,6 @@
 .navbar {
-  box-shadow: 0 0 10px #ac103c;
-  background-color: #ac103cd8;
+  box-shadow: 0 2px 10px #ac103c1c;
+  background-color: #ffffff;
   /* place-content: center !important; */
   z-index: 500;
 }
@@ -14,7 +14,7 @@ list-style-type: none;
   padding-right: 5rem;
 }
 .logo {
-  width: 13rem;
+  width: 15rem;
 }
 @media screen and (max-width: 720px) {
   .overlay a {
